@@ -1,0 +1,504 @@
+/**************************************
+
+======================================  
+        Table Of Contents
+======================================
+1. Typography
+2. Template Default Style
+3. Preloader Style
+4. Demo Layout
+
+
+
+/*=======================================================================
+1. Typography
+=========================================================================*/
+html {
+    height: 100%;
+  }
+  body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    line-height: 2;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: #fbfbfb;
+    background-color: #ffffff;
+  }
+  p {
+    margin: 0 0 20px 0;
+    color: #fbfbfb;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 20px 0;
+    color: #111111;
+  }
+  h1,
+  h2 {
+    line-height: 1.3;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 66px;
+  }
+  @media only screen and (max-width: 1199px) {
+    h1 {
+      font-size: 52px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    h1 {
+      font-size: 46px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 41px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    h1 {
+      font-size: 36px;
+    }
+  }
+  @media only screen and (max-width: 479px) {
+    h1 {
+      font-size: 32px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    h1 {
+      font-size: 28px;
+    }
+  }
+  h2 {
+    font-size: 32px;
+  }
+  @media only screen and (max-width: 1199px) {
+    h2 {
+      font-size: 28px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    h2 {
+      font-size: 26px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    h2 {
+      font-size: 22px;
+    }
+  }
+  h3 {
+    font-size: 22px;
+  }
+  @media only screen and (max-width: 991px) {
+    h3 {
+      font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+    }
+  }
+  /*=======================================================================
+  2. Template Default Style
+  =========================================================================*/
+  a {
+    text-decoration: none;
+  }
+  a:active,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  a:active,
+  a:hover,
+  a:focus {
+    outline: 0 none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  body.loaded .wrapper {
+    opacity: 1;
+    visibility: visible;
+  }
+  .owl-carousel .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /*========================================================================
+  3. Preloader Style
+  =========================================================================*/
+  body #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: #fff;
+    overflow: hidden;
+    display: block;
+  }
+  body #preloader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+  }
+  body.loaded #preloader {
+    display: none;
+  }
+  
+  /*========================================================================
+  4. Demo Layout 
+  =========================================================================*/
+  body .fxt-template-layout9:before {
+    -webkit-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    transform: translateY(200px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  body.loaded .fxt-template-layout9:before {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .fxt-template-layout9 {
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  .fxt-template-layout9:before {
+    content: "";
+    background-image: url("../img/banner9-1.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    -webkit-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+  }
+  @media only screen and (max-width: 991px) {
+    .fxt-template-layout9 .fxt-elements {
+      display: none;
+    }
+  }
+  .fxt-template-layout9 .fxt-elements li {
+    position: absolute;
+    z-index: 1;
+  }
+  .fxt-template-layout9 .fxt-elements li.item-1 {
+    top: 40%;
+    left: 10%;
+    right: inherit;
+  }
+  .fxt-template-layout9 .fxt-elements li.item-2 {
+    top: 20%;
+    left: inherit;
+    right: 20%;
+  }
+  .fxt-template-layout9 .fxt-elements li.item-3 {
+    top: 50%;
+    left: inherit;
+    right: 10%;
+  }
+  .fxt-template-layout9 .fxt-main-content {
+    min-height: 100vh;
+    padding: 50px 30px 20vw;
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-logo {
+    margin-top: 8px;
+    margin-bottom: 50px;
+    max-width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-logo a {
+    display: block;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-main-title {
+    color: #000000;
+    font-weight: 700;
+    max-width: 900px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 46px;
+  }
+  @media only screen and (max-width: 991px) {
+    .fxt-template-layout9 .fxt-main-content .fxt-main-title {
+      font-size: 41px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .fxt-template-layout9 .fxt-main-content .fxt-main-title {
+      font-size: 36px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout9 .fxt-main-content .fxt-main-title {
+      font-size: 32px;
+    }
+  }
+  @media only screen and (max-width: 479px) {
+    .fxt-template-layout9 .fxt-main-content .fxt-main-title {
+      font-size: 28px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .fxt-template-layout9 .fxt-main-content .fxt-main-title {
+      font-size: 26px;
+    }
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-paragraph {
+    max-width: 550px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #000000;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-group {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-group .fxt-single-item {
+    margin: 0 10px 10px;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-fill {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+    border-radius: 3px;
+    border: 0;
+    padding: 10px 40px;
+    min-width: 180px;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  @media only screen and (max-width: 767px) {
+    .fxt-template-layout9 .fxt-main-content .fxt-btn-fill {
+      padding: 10px 30px;
+      min-width: 160px;
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout9 .fxt-main-content .fxt-btn-fill {
+      padding: 10px 20px;
+      min-width: 140px;
+    }
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-fill:before,
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-fill:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-fill:before {
+    background-color: #0173ff;
+    opacity: 1;
+    visibility: visible;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-fill:after {
+    border: 1px solid #0173ff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-fill:hover {
+    color: #0173ff;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-fill:hover:after {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-fill:hover:before {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-btn-fill:focus {
+    outline: none;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-social {
+    margin-bottom: 20px;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout9 .fxt-main-content .fxt-social ul li {
+      margin-right: 5px;
+    }
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-social ul li:last-child {
+    margin-right: 0;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-social ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    background-color: #323232;
+    border-radius: 50%;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  @media only screen and (max-width: 767px) {
+    .fxt-template-layout9 .fxt-main-content .fxt-social ul li a {
+      font-size: 15px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout9 .fxt-main-content .fxt-social ul li a {
+      font-size: 14px;
+      height: 35px;
+      width: 35px;
+    }
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-social ul li.fxt-facebook a:hover {
+    background-color: #3b5998;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-social ul li.fxt-twitter a:hover {
+    background-color: #00acee;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-social ul li.fxt-google a:hover {
+    background-color: #CC3333;
+  }
+  .fxt-template-layout9 .fxt-main-content .fxt-social ul li.fxt-linkedin a:hover {
+    background-color: #0077B5;
+  }
+  
