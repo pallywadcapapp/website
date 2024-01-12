@@ -12,13 +12,17 @@
         });
     });
 
+
+
     /*-------------------------------------
-    initialize onscroll animations
+    Background image
     -------------------------------------*/
-    AOS.init();
-
-
-
-
+    $("[data-bg-image]").each(function() {
+        var img = $(this).data("bg-image");
+        $(this).css({
+            backgroundImage: "url(" + img + ")"
+        });
+    });
+  
 
 })(jQuery);

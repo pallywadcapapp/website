@@ -1,7 +1,6 @@
 
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,15 +8,16 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/pallywad-ico.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/padwally-ico.png">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom Animation CSS -->
     <link rel="stylesheet" href="assets/css/animations.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,41 +29,208 @@
         <img src="assets/img/preloader.gif" alt="Preloader">
     </div>
 	<!-- Page Loader End --> 
-    <div id="wrapper" class="wrapper">
-        <div class="fxt-template-layout9 has-animation">
-            <ul class="fxt-elements">
-                <li class="item-1 translate-left-100 transition-100 transition-delay-1000"><img src="assets/img/cloud1.png" alt="Element"></li>
-                <li class="item-2 translate-right-100 transition-100 transition-delay-1400"><img src="assets/img/cloud1.png" alt="Element"></li>
-                <li class="item-3 translate-right-100 transition-100 transition-delay-1800"><img src="assets/img/cloud1.png" alt="Element"></li>
-            </ul>
-            <!-- Main Content Start Here -->
-            <div class="fxt-main-content">
-                <div class="fxt-logo translate-bottom-50 transition-100 transition-delay-200">
-                    <a href="index.thml"><img src="assets/img/pallywad-logo.png" alt="logo"></a>
-                </div>  
-                <h1 class="fxt-main-title translate-bottom-50 transition-100 transition-delay-600">We Are Coming Soon</h1>
-                <p class="fxt-paragraph translate-bottom-50 transition-100 transition-delay-800">Something super amazing is coming soon right here, watch this space.</p>
-                <div class="countdown"></div>
-                <div class="fxt-social mt-4">
-                    <ul>
-                        <li class="fxt-facebook translate-top-50 transition-100 transition-delay-1200"><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="fxt-twitter translate-top-50 transition-100 transition-delay-1300"><a href="#" title="twitter"><i class="fab fa-x-twitter"></i></a></li>
-                        <li class="fxt-google translate-top-50 transition-100 transition-delay-1400"><a href="#" title="google"><i class="fab fa-google-plus-g"></i></a></li>
-                        <li class="fxt-linkedin translate-top-50 transition-100 transition-delay-1500"><a href="#" title="linkedin"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
+
+    <!-- MAIN AREA -->
+    <div id="main" class="has-animation">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid d-flex align-items-center justify-content-center">
+                            <a class="navbar-brand translate-top-50 transition-100 transition-delay-200" href="#"><img src="assets/img/padwally-logo.png" /></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item ">
+                                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Loans</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <a href="" class="default-button default-transparent-button">Sign In</a>
+                                    <a href="" class="default-button">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
-            <!-- Main Content End Here -->
+        </header>
+
+        <div class="hero">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-6 pe-5 ps-8">
+                        <h3 class="mt-10 translate-bottom-50 transition-100 transition-delay-600">Empowering Your  Financial  Journey With
+                            Cutting-Edge Solutions
+                        </h3>
+                        <p class="sub-title translate-bottom-50 transition-100 transition-delay-800">
+                            Unlock your potential Opportunities with Hassle-Free Loans.
+                        </p>
+                        <p class="translate-bottom-50 transition-100 transition-delay-1000"><a href="" class="default-button">Get Started</a></p>
+                    </div>
+                    <div class="col-6 light-blue text-center ">
+                        <img src="assets/img/phone-user.jpg" class="empower-pic translate-bottom-100 transition-100 transition-delay-400" />
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
+        <div class="container-fluid mt-15">
+            <div class="row text-center ">
+                <p class="services-title" data-aos="fade-up">SERVICES</p>
+                <h4 class=" services-bold-caption col-10 offset-1" data-aos="fade-up" data-aos-delay="100" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out">Power up your business with a full-stack
+                    lending solution that fits your needs.
+                </h4>
+                <p class="sub-title"  data-aos="fade-up" data-aos-delay="200" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out">
+                    Lending that doesn’t weigh you down.
+                </p>
+                <div class="col-4 offset-4 text-left mb-3">
+                    <ul class="loan-type-list">
+                        <li  data-aos="fade-up"  data-aos-delay="300" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out"><i class="fa fa-check green-circle"></i> Personal loans</li>
+                        <li  data-aos="fade-up" data-aos-delay="400" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out"><i class="fa fa-check green-circle"></i> Business loans</li>
+                    </ul>
+                </div>
+                <p data-aos="fade-up" data-aos-delay="400" data-aos-offset="50" data-aos-duration="700">
+                    <a href=""  class="default-button default-button-large">Apply for Loan</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12"> <hr class="greybg"></div>
+               
+            </div>
+            
+            <div class="row ">
+                <div class="col-12">
+                    <div class="dark-grey-1 px-5 py-5 d-lg-flex align-items-center ">
+                        <div class="col-6">
+                        
+                            <h4 class="stop-worry-title" data-aos="fade-up"  data-aos-easing="ease-out">Stop worrying over finances
+                                and run your business</h4>
+                            <p class="stop-worry-sub-title" data-aos="fade-up"  data-aos-delay="300" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out"> Get business loans approved within hours/days with 
+                                transparent lending criteria and process.
+                            </p>
+                            <p class="mt-5" data-aos="fade-up"  data-aos-delay="500" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out">
+                                <a href="" class="default-button">Get Started Now</a>
+                            </p>
+                        </div>
+                        <div class="col-6 text-center">
+                            <img src="assets/img/woman-on-pc.jpg" class="stop-worry-pic" data-aos="fade-left"  data-aos-delay="300" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out" />
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="row mt-4">
+                <div class="col-6">
+                    <div class="dark-grey-1 px-5 py-5">
+                        <h4 class="stop-worry-title" data-aos="fade-up"  data-aos-easing="ease-out">
+                            Change the way you
+                            manage you money.</h4>
+                        <p class="stop-worry-sub-title" data-aos="fade-up"  data-aos-delay="300" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out"> Don’t let the lack of funds stop you from
+                            living your dreams. Get the financial support
+                            you need to make the most out of money.
+                        </p>
+                        <div data-aos="fade-up"  data-aos-delay="500" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out">
+                            <img src="assets/img/get-access.png" class="img-fluid" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-6">
+                    <div class="dark-grey-1 px-5 py-5">
+                        <h4 class="stop-worry-title" data-aos="fade-up" data-aos-easing="ease-out">
+                            Access business fundings in hours/days.</h4>
+                        <p class="stop-worry-sub-title" data-aos="fade-up"  data-aos-delay="300" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out"> 
+                            Get your business and projects on the move with our lending plans.
+                        </p>
+                        <div class="white-bg-form shadow py-4 px-5 rounded" data-aos="fade-up"  data-aos-delay="700" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out">
+                            <form action="" method="POST">
+                                <div class="form-group">
+                                    <label><b>Name<span class="text-danger">*</span></b></label>
+                                    <input type="text" class="form-control" placeholder="Enter your name and surname" />
+                                </div>
+
+                                <div class="form-group mt-3">
+                                    <label><b>What type of loan works for you?
+                                        <span class="text-danger">*</span></b></label><br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Personal</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Business</label>
+                                    </div>
+                                    <div class="">
+                                        <p class="mt-3 text-center" data-aos="fade-up"  data-aos-delay="500" data-aos-offset="50" data-aos-duration="700"  data-aos-easing="ease-out">
+                                            <a href="" class="default-button default-rounded ">Continue &raquo;</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="light-blue px-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="about-holder">
+                            <p class="about-title">About Us</p>
+                            <hr class="greybg2">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h4 ata-aos="fade-up" data-aos-delay="200" data-aos-offset="50" data-aos-duration="700">
+                            Pallywad Capital is a leading
+                            financial institution dedicated to
+                            empowering individuals and 
+                            businesses with financial
+                            solutions.
+                        </h4>
+                        <p data-aos="fade-up" data-aos-delay="300" data-aos-offset="50" data-aos-duration="700">
+                            Our innovative and accessible lending solutions redefine the financial experience, making
+capital accessible to every aspiring individual and business in Lagos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- MAIN AREA END -->
+    
     <!-- jquery-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1fe221880a.js" crossorigin="anonymous"></script>
     <!-- Imagesloaded js -->
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
