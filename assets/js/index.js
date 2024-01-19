@@ -1,6 +1,8 @@
 import Home from "./views/Home.js";
 import NotFound from "./views/NotFound.js";
 import Loans from "./views/Loans.js";
+import Onboarding from "./views/Onboarding.js";
+import Signin from "./views/Signin.js";
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
@@ -23,7 +25,8 @@ const router = async () => {
         {path:"/", view: Home},
         {path:"/404", view: NotFound},
         {path:"/loans" , view: Loans },
-        // {path:"/settings" , view: Settings }
+        {path:"/onboarding" , view: Onboarding },
+        {path:"/sign-in" , view: Signin }
     ]
 
     //check each route for a potential match and redirect

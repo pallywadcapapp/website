@@ -7,7 +7,7 @@ class DefaultHeader extends HTMLElement {
                 <div class="row">
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid d-flex align-items-center justify-content-center">
-                            <a class="navbar-brand translate-top-50 transition-100 transition-delay-200" href="#"><img src="assets/img/padwally-logo.png" /></a>
+                            <a class="navbar-brand translate-top-50 transition-100 transition-delay-200" href="/" data-link><img src="assets/img/padwally-logo.png" /></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -27,8 +27,8 @@ class DefaultHeader extends HTMLElement {
                                     </li>
                                 </ul>
                                 <div>
-                                    <a href="" class="default-button default-transparent-button">Sign In</a>
-                                    <a href="" class="default-button">Get Started</a>
+                                    <a href="/sign-in" class="default-button default-transparent-button">Sign In</a>
+                                    <a href="/onboarding" class="default-button">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ class DefaultFooter extends HTMLElement {
                     </div>
                     <div class="col-md-3 col-4 text-end">
                         <p class="mt-2">
-                            <a href="" class="default-button-white">Get Started</a>
+                            <a href="/onboarding" class="default-button-white">Get Started</a>
                         </p>
                     </div>
                     <div class="col-md-12 mt-2">
@@ -135,3 +135,25 @@ class DefaultFooter extends HTMLElement {
 }
 
 customElements.define('default-footer', DefaultFooter)
+
+
+/* ---------------- ONBOARDING HEADER -------------------*/ 
+class OnboardingHeader extends HTMLElement {
+    connectedCallback(){
+        this.innerHTML  = `
+        
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-12 col-12 text-center">
+                        <a class=" navbar-brand translate-top-50 transition-100 transition-delay-200" href="/" data-link>
+                            <img src="assets/img/padwally-logo.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        `
+    }
+}
+
+customElements.define('onboarding-header', OnboardingHeader)

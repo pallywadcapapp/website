@@ -21,7 +21,9 @@ export default class extends DefaultView {
                             <p class="sub-title translate-bottom-50 transition-100 transition-delay-800">
                                 Unlock your potential Opportunities with Hassle-Free Loans.
                             </p>
-                            <p class="translate-bottom-50 transition-100 transition-delay-1000"><a href="" class="default-button">Get Started</a></p>
+                            <p class="translate-bottom-50 transition-100 transition-delay-1000">
+                                <a href="/onboarding" class="default-button">Get Started</a>
+                            </p>
                         </div>
                         <div class="col-md-6 col-12 light-blue text-center ">
                             <img src="assets/img/phone-user.jpg" class="empower-pic translate-bottom-100 transition-100 transition-delay-400" />
@@ -37,7 +39,7 @@ export default class extends DefaultView {
                         lending solution that fits your needs.
                     </h4>
                     <p class="sub-title">
-                        Lending that doesn’t weigh you down.
+                        Lending that doesn't weigh you down.
                     </p>
                     <div class="col-12 col-md-4 offset-md-4 text-left mb-3">
                         <ul class="loan-type-list">
@@ -68,7 +70,7 @@ export default class extends DefaultView {
                                     transparent lending criteria and process.
                                 </p>
                                 <p class="mt-5" >
-                                    <a href="" class="default-button">Get Started Now</a>
+                                    <a href="/onboarding" class="default-button">Get Started Now</a>
                                 </p>
                             </div>
                             <div class="col-md-6 col-12 text-center">
