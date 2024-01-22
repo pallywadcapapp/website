@@ -4,7 +4,7 @@ import Loans from "./views/Loans.js";
 import Onboarding from "./views/Onboarding.js";
 import Onboarding2 from "./views/Onboarding2.js";
 import Onboarding3 from "./views/Onboarding3.js";
-import Signin from "./views/Signin.js";
+import Signin from "./views/SignIn.js";
 
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");

@@ -98,6 +98,7 @@ $('body').on('click', '#verifyEmail', function(e){
     username = localStorage.getItem('email');
     token = inputElements.toString();
     api_endpoint = "/api/v1/Auth/ValidateNewUser";
+    
 
     //check if token is valid
     let data =  {
