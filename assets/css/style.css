@@ -7,7 +7,7 @@
 2. Preloader Style
 3. General Layout Styles
 4. Onboarding
-
+5. Sign in 
 
 
 /*=======================================================================
@@ -368,16 +368,7 @@ header {
     width: 100%;
 }
 
-.footer-social-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: end;
-}
 
-.footer-social-links li a {
-    color: #fff;
-    margin-left:20px;
-}
 
 
 .default-transparent-button {
@@ -572,6 +563,17 @@ hr.footerline {
     color: #fff;
 }
 
+.footer-social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+}
+
+.footer-social-links li a {
+    color: #fff;
+    margin-left:20px;
+}
+
 .nav-pills {
     --bs-nav-pills-border-radius: var(--bs-border-radius);
     --bs-nav-pills-link-active-color: #fff;
@@ -626,25 +628,87 @@ hr.footerline {
     border: 1px solid #24488F;
 }
 
-.phone-icon { 
-    background-image: url(../img/phone-icon.png) !important;
-    background-size: 20px 16px;
-    background-position: 12px;
-    background-repeat: no-repeat;
+.onboarding-form input[type=password] {
+    padding-right: 35px;
 }
 
-.email-icon { 
-    background-image: url(../img/email-icon.png) !important;
-    background-size: 20px 16px;
-    background-position: 12px;
-    background-repeat: no-repeat;
+.onboarding-form input::placeholder {
+    color: #999;
+}
+
+.phone-icon { 
+    float: left;
+    margin-left: 14px;
+    margin-top: -26px;
+    position: relative;
+    z-index: 2;
+    color: #24488F;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.phone-icon img { 
+    width: 19px;
+    height: 19px;
+}
+
+.email-icon {
+    float: left;
+    margin-left: 13px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+    color: #24488F;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.email-icon img {
+    width: 20px;
+    height: 16px;
+}
+
+.user-icon {
+    float: left;
+    margin-left: 15px;
+    margin-top: -27px;
+    position: relative;
+    z-index: 2;
+    color: #24488F;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.user-icon img {
+    width: 20px;
+    height: 16px;
 }
 
 .lock-icon {
-    background-image: url(../img/padlock-icon.png) !important;
-    background-size: 24px 23px;
-    background-position: 10px;
-    background-repeat: no-repeat;
+    float: left;
+    margin-left: 12px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+    color: #24488F;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.lock-icon img {
+    width: 24px;
+    height: 23px
+}
+
+.eye-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -26px;
+    position: relative;
+    z-index: 2;
+    color: #24488F;
+    padding-right: 12px;
+    cursor: pointer;
 }
 
 .continue-button {
@@ -689,40 +753,74 @@ hr.footerline {
     font-size: 12px;
 }
 
-
+.verify_pin-parent {
+    display: flex;
+    justify-content: center;
+}
+.pinClass {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    margin: 0 5px;
+    padding-left: 0px !important;
+    font-size: 30px;
+    line-height: 30px;
+}
 /*========================================================================
-4. Sign up
+5. Sign in
 =========================================================================*/
 
-.signup-form {
+.signin-form {
     font-size: 15px;
     line-height: 20px;
     padding: 35px 60px;
     color:#ADADAD;
 }
 
-.signup-form h3 {
+.signin-form h3 {
     font-size: 27px;
     font-weight: 700;
     margin-top:20px;
     margin-bottom: 10px;
 }
 
-.signup-form label {
+.signin-form label {
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.signup-form hr {
+.signin-form hr {
     border-top: 1px solid #000;
 }
 
-.signup-form input[type=text],
-.signup-form input[type=email],
-.signup-form input[type=password],
-.signup-form input[type=number]
+.signin-form input[type=text],
+.signin-form input[type=email],
+.signin-form input[type=password],
+.signin-form input[type=number]
 {
     padding-left : 10px;
     border: 1px solid #ADADAD;
     ;
+}
+
+
+input[type="file"]{
+    display: none;
+}
+
+.upload-button {
+    border: 1px solid #24488F;
+    color:  #24488F;
+    transition: all 0.3s;
+    display: block;
+    cursor: pointer;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+}
+.upload-button:hover { 
+    background-color: #33D290;
+    border-color: #33D290;
+    color: #fff;
 }

@@ -2,7 +2,10 @@ import Home from "./views/Home.js";
 import NotFound from "./views/NotFound.js";
 import Loans from "./views/Loans.js";
 import Onboarding from "./views/Onboarding.js";
+import Onboarding2 from "./views/Onboarding2.js";
+import Onboarding3 from "./views/Onboarding3.js";
 import Signin from "./views/Signin.js";
+
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
@@ -26,6 +29,8 @@ const router = async () => {
         {path:"/404", view: NotFound},
         {path:"/loans" , view: Loans },
         {path:"/onboarding" , view: Onboarding },
+        {path:"/onboarding-2" , view: Onboarding2 },
+        {path:"/onboarding-3" , view: Onboarding3 },
         {path:"/sign-in" , view: Signin }
     ]
 

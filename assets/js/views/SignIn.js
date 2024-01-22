@@ -3,7 +3,7 @@ import DefaultView from "./DefaultView.js";
 export default class extends DefaultView {
     constructor(params) {
         super(params);
-        this.setTitle("Onboarding User - Getting Started | Pallywad Capital ");
+        this.setTitle("Sign In | Pallywad Capital ");
     }
 
     async getHtml() {
@@ -13,7 +13,7 @@ export default class extends DefaultView {
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 col-12 ms-auto me-auto mt-4">
-                        <div id="onboarding-forms" class="white-bg rounded div-shadow signup-form ">
+                        <div id="onboarding-forms" class="white-bg rounded div-shadow signin-form ">
                             <form id="step-1"  >
                                 <div class="text-center mt-3 px-8">
                                     <img src="../assets/img/top-continue-3.png" class="onboard-icon" />
@@ -38,7 +38,7 @@ export default class extends DefaultView {
                                 </div>
                                 <div class="form-group mt-2 px-7">
                                     <button id="login" class="continue-button">Sign In</button>
-                                    <div class="mt-3">Don't have an account <a href="/onboarding" data-link><b>Sign Up</b></span></a></div>
+                                    <div class="mt-3">Don't have an account?  <a href="/onboarding" data-link><b>Sign Up</b></span></a></div>
                                 </div>
                                
                             </form>
