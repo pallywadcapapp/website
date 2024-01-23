@@ -96,7 +96,7 @@ $('body').on('click', '#verifyEmail', function(e){
     e.preventDefault();
     inputElements = $('.pin').map((i, e) => e.value).get();
     username = localStorage.getItem('email');
-    token = inputElements.toString();
+    token = localStorage.getItem('verificationPin');
     api_endpoint = "/api/v1/Auth/ValidateNewUser";
     
 
@@ -112,14 +112,11 @@ $('body').on('click', '#verifyEmail', function(e){
         headers: { 'Content-Type': 'application/json' },
         data: data,
         error: function(d){
-            displayErrorToast(d.responseJSON.message, d.responseJSON.status);
+            displayErrorToast("Token not provided!", "Error");
         },
         success: function(d){
-            console.log(d.status, d.message);
-            if(d.status=="success"){
-                localStorage.setItem("email", email);
-                localStorage.setItem("password", password);
-                localStorage.setItem("verificationPin", d.message)
+            console.log(d.status);
+            if(d.status=="Ok"){
                 location.href = "/onboarding-3";
             }
             else {
@@ -163,30 +160,22 @@ $('body').on('click', '#submit-onboarding', function(e){
             headers: { 'Content-Type': 'application/json' },
             data: JSON.stringify(data),
             error: function(d){
-                toastr.error(d.responseJSON.message, d.responseJSON.status, {
-                    timeOut: 5e3,
-                    closeButton: !0,
-                    debug: !1,
-                    newestOnTop: !0,
-                    progressBar: !0,
-                    positionClass: "toast-top-right",
-                    preventDuplicates: !0,
-                    onclick: null,
-                    showDuration: "300",
-                    hideDuration: "1000",
-                    extendedTimeOut: "1000",
-                    showEasing: "swing",
-                    hideEasing: "linear",
-                    showMethod: "fadeIn",
-                    hideMethod: "fadeOut",
-                    tapToDismiss: !1,
-                });
+                displayErrorToast(d.responseJSON.message, d.responseJSON.status);
             },
             success: function(d){
                 console.log(d.status);
-                localStorage.removeItem("email");
-                localStorage.removeItem("password");
-                console.log(d);
+                if(d.status=='Success'){
+                    displaySuccessToast("Your account was created successfully", "Signup Successful")
+                    localStorage.removeItem("email");
+                    localStorage.removeItem("password");
+                    setTimeout(function(){
+                        location.href = "/sign-in";
+                    }, 5000);
+                }
+                else {
+                    displayErrorToast(d.message, d.status);
+                }
+                
             }
         })
     }
@@ -217,6 +206,27 @@ function goBack(step){
 
 function displayErrorToast(message, title){
     toastr.error(message, title, {
+        timeOut: 5e3,
+        closeButton: !0,
+        debug: !1,
+        newestOnTop: !0,
+        progressBar: !0,
+        positionClass: "toast-top-right",
+        preventDuplicates: !0,
+        onclick: null,
+        showDuration: "300",
+        hideDuration: "1000",
+        extendedTimeOut: "1000",
+        showEasing: "swing",
+        hideEasing: "linear",
+        showMethod: "fadeIn",
+        hideMethod: "fadeOut",
+        tapToDismiss: !1,
+    });
+}
+
+function displaySuccessToast(message, title){
+    toastr.success(message, title, {
         timeOut: 5e3,
         closeButton: !0,
         debug: !1,
