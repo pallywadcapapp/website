@@ -9,6 +9,7 @@
     3. Onboarding steps initialization
     4. Toggle password
     5. History navigation
+    6. General utilities
     -------------------------------------*/
 
     /*-------------------------------------
@@ -29,6 +30,7 @@
 1. API URL
 -------------------------------------*/
 const api_url = 'https://auth.pallywad.com'; 
+const loan_app_url = 'https://user.pallywad.com';
 
 
 /*-------------------------------------
@@ -54,15 +56,13 @@ $('body').on('click','#continue', function(e){
             "username": email
         }
 
-        console.log(data);
-
         $.ajax({
             type:'get',
             url: api_url+api_endpoint,
             headers: { 'Content-Type': 'application/json' },
             data: data,
             error: function(d){
-                displayErrorToast(d.responseJSON.message, d.responseJSON.status);
+                displayToast('error',d.responseJSON.message, d.responseJSON.status)
             },
             success: function(d){
                 console.log(d.status);
@@ -73,7 +73,7 @@ $('body').on('click','#continue', function(e){
                     location.href = "/onboarding-2";
                 }
                 else {
-                    displayErrorToast("Email is already registered to another user", "Error");
+                    displayToast('error', "Email is already registered to another user", "Error");
                 }
                 
             }
@@ -112,7 +112,7 @@ $('body').on('click', '#verifyEmail', function(e){
         headers: { 'Content-Type': 'application/json' },
         data: data,
         error: function(d){
-            displayErrorToast("Token not provided!", "Error");
+            displayToast('error', "Token not provided!", "Error");
         },
         success: function(d){
             console.log(d.status);
@@ -120,7 +120,7 @@ $('body').on('click', '#verifyEmail', function(e){
                 location.href = "/onboarding-3";
             }
             else {
-                displayErrorToast("PIN Incorrect!", "Error");
+                displayToast('error', "PIN Incorrect!", "Error");
             }
             
         }
@@ -160,12 +160,13 @@ $('body').on('click', '#submit-onboarding', function(e){
             headers: { 'Content-Type': 'application/json' },
             data: JSON.stringify(data),
             error: function(d){
-                displayErrorToast(d.responseJSON.message, d.responseJSON.status);
+                displayToast('error', d.responseJSON.message, d.responseJSON.status);
             },
             success: function(d){
                 console.log(d.status);
                 if(d.status=='Success'){
-                    displaySuccessToast("Your account was created successfully", "Signup Successful")
+                    displayToast('success', "Your account was created successfully", "Signup Successful");
+                    
                     localStorage.removeItem("email");
                     localStorage.removeItem("password");
                     setTimeout(function(){
@@ -173,7 +174,7 @@ $('body').on('click', '#submit-onboarding', function(e){
                     }, 5000);
                 }
                 else {
-                    displayErrorToast(d.message, d.status);
+                    displayToast("error", d.message, d.status);
                 }
                 
             }
@@ -203,45 +204,97 @@ function goBack(step){
     window.history.back(-step);
 }
 
-
-function displayErrorToast(message, title){
-    toastr.error(message, title, {
-        timeOut: 5e3,
-        closeButton: !0,
-        debug: !1,
-        newestOnTop: !0,
-        progressBar: !0,
-        positionClass: "toast-top-right",
-        preventDuplicates: !0,
-        onclick: null,
-        showDuration: "300",
-        hideDuration: "1000",
-        extendedTimeOut: "1000",
-        showEasing: "swing",
-        hideEasing: "linear",
-        showMethod: "fadeIn",
-        hideMethod: "fadeOut",
-        tapToDismiss: !1,
-    });
+/*-------------------------------------
+6. General utilities
+-------------------------------------*/
+function displayToast(messageType, message, title){
+    switch (messageType) {
+        case 'success':
+            toastr.success(message, title, {
+                timeOut: 5e3,
+                closeButton: !0,
+                debug: !1,
+                newestOnTop: !0,
+                progressBar: !0,
+                positionClass: "toast-top-right",
+                preventDuplicates: !0,
+                onclick: null,
+                showDuration: "300",
+                hideDuration: "1000",
+                extendedTimeOut: "1000",
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+                tapToDismiss: !1,
+            });
+            
+            break;
+    
+        default:
+            toastr.error(message, title, {
+                timeOut: 5e3,
+                closeButton: !0,
+                debug: !1,
+                newestOnTop: !0,
+                progressBar: !0,
+                positionClass: "toast-top-right",
+                preventDuplicates: !0,
+                onclick: null,
+                showDuration: "300",
+                hideDuration: "1000",
+                extendedTimeOut: "1000",
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+                tapToDismiss: !1,
+            });
+            break;
+    }
+    
 }
 
-function displaySuccessToast(message, title){
-    toastr.success(message, title, {
-        timeOut: 5e3,
-        closeButton: !0,
-        debug: !1,
-        newestOnTop: !0,
-        progressBar: !0,
-        positionClass: "toast-top-right",
-        preventDuplicates: !0,
-        onclick: null,
-        showDuration: "300",
-        hideDuration: "1000",
-        extendedTimeOut: "1000",
-        showEasing: "swing",
-        hideEasing: "linear",
-        showMethod: "fadeIn",
-        hideMethod: "fadeOut",
-        tapToDismiss: !1,
-    });
-}
+
+/*-------------------------------------
+7. Sign in user
+-------------------------------------*/
+$('body').on('click','#login', function(e){
+
+    if($("#step-1").valid()){
+        e.preventDefault();
+        let email = $('#email').val();
+        let password  = $('#password').val();
+        let api_endpoint = "/api/v1/Auth/login";
+
+        //check email if available
+        let data =  {
+            "username": email,
+            "password": password
+        }
+
+        $.ajax({
+            type:'post',
+            url: api_url+api_endpoint,
+            headers: { 'Content-Type': 'application/json' },
+            data: JSON.stringify(data),
+            error: function(d){
+                displayToast('error',d.responseJSON.message, d.responseJSON.status)
+            },
+            success: function(d){
+                if(d.token){
+                    localStorage.setItem("email", email);
+                    localStorage.setItem("token", d.token);
+                    localStorage.setItem("tokenExpiration", d.expiration)
+                    location.href = loan_app_url+"/dashboard";
+                }
+                else {
+                    displayToast('error', "The email or password you entered is incorrect", "Login Failed");
+                }
+                
+            }
+        })
+
+        
+    }
+})

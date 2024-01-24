@@ -29,13 +29,12 @@ export default class extends DefaultView {
                                    
                                 </div>
                                 <div class="form-group px-7 mt-3">
-                                    <input type="password" 
-                                        required class="form-control" 
-                                        id="password" 
-                                        name="password"
-                                        placeholder="Password">
+                                    <input type="password" required class="form-control" id="password" name="password" placeholder="Password">
+                                    
+                                    <span toggle="#password" class="fa fa-eye-slash eye-icon toggle-password"></span>
                                     <p class="mt-2"><a href="/forgot-password">Forgot password?</a></p>
                                 </div>
+                                
                                 <div class="form-group mt-2 px-7">
                                     <button id="login" class="continue-button">Sign In</button>
                                     <div class="mt-3">Don't have an account?  <a href="/onboarding" data-link><b>Sign Up</b></span></a></div>
