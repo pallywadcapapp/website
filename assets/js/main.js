@@ -171,7 +171,7 @@ $('body').on('click', '#submit-onboarding', function(e){
                     localStorage.removeItem("email");
                     localStorage.removeItem("password");
                     setTimeout(function(){
-                        location.href = "/sign-in";
+                        location.href = "https://app.pallywad.com/sign-in";
                     }, 5000);
                 }
                 else {
