@@ -95,8 +95,9 @@ $(document).ready(function(){
 $('body').on('click', '#verifyEmail', function(e){
     e.preventDefault();
     inputElements = $('.pin').map((i, e) => e.value).get();
+    console.log(inputElements[0]);
     username = localStorage.getItem('email');
-    token = localStorage.getItem('verificationPin');
+    token = inputElements[0]; //localStorage.getItem('verificationPin');
     api_endpoint = "/api/v1/Auth/ValidateNewUser";
     
 
@@ -116,7 +117,7 @@ $('body').on('click', '#verifyEmail', function(e){
         },
         success: function(d){
             console.log(d.status);
-            if(d.status=="Ok"){
+            if(d.message==true){
                 location.href = "/onboarding-3";
             }
             else {
