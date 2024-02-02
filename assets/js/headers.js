@@ -27,7 +27,7 @@ class DefaultHeader extends HTMLElement {
                                     </li>
                                 </ul>
                                 <div>
-                                    <a href="/sign-in" class="default-button default-transparent-button" data-link>Sign In</a>
+                                    <a href="javascript:void(0);" id="sign-in" class="default-button default-transparent-button" data-link>Sign In</a>
                                     <a href="/onboarding" class="default-button" data-link>Get Started</a>
                                 </div>
                             </div>

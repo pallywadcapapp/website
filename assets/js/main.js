@@ -128,6 +128,10 @@ $('body').on('click', '#verifyEmail', function(e){
     })
 })
 
+$('body').on('click', '#sign-in', function(e){
+    window.location.href = 'https://app.pallywad.com/sign-in'
+})
+
 //onboarding page 3
 $('body').on('click', '#submit-onboarding', function(e){
     if($("#step-2").valid()){
