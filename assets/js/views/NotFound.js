@@ -8,10 +8,12 @@ export default class extends DefaultView {
 
     async getHtml() {
         return `
-        <div class="text-center mt-5">
-            <h3>Page not found</h3>
-            <p>Sorry, the page you requested could not be found, please try again.</p>
+        <default-header></default-header>
+        <div class="text-center mt-5 mb-5">
+            <img src="assets/img/404.png" />
+            <p>Sorry, the page you requested could not be found, please <a href="/" data-link>click here</a> to return to the homepage.</p>
         </div>
+        <default-footer></default-footer>
         `;
     }
 }
