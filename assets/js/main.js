@@ -30,7 +30,7 @@
 1. API URL
 -------------------------------------*/
 const api_url = 'https://auth.pallywad.com'; 
-const loan_app_url = 'https://user.pallywad.com';
+const loan_app_url = 'https://app.pallywad.com';
 
 
 /*-------------------------------------
