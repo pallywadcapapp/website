@@ -34,7 +34,7 @@ export default class extends DefaultView {
                                 </div>
                                 <div class="form-group mt-3 px-7">
                                     <button id="continue" class="continue-button">Continue</button>
-                                    <a href="/sign-in" class="have-account mt-3">Already have an account? <span>Sign In</span></a>
+                                    <a href="https://app.pallywad.com/sign-in" class="have-account mt-3">Already have an account? <span>Sign In</span></a>
                                 </div>
                                 <hr class="mt-4 mb-4">
                                 <div class="privacy-area text-center">

@@ -48,7 +48,7 @@ export default class extends DefaultView {
                         </ul>
                     </div>
                     <p>
-                        <a href=""  class="default-button default-button-large">Apply for Loan</a>
+                        <a href="/onboarding"  class="default-button default-button-large">Apply for Loan</a>
                     </p>
                 </div>
             </div>

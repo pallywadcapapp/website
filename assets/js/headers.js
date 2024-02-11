@@ -84,8 +84,8 @@ class DefaultFooter extends HTMLElement {
                             <div class="col-md-4">
                                 <p class="footer-link-title">ACCOUNT</p>
                                 <ul class="footer-link">
-                                    <li><a href="">Log in</a></li>
-                                    <li><a href="">Sign up</a></li>
+                                    <li><a href="https://app.pallywad.com/sign-in">Log in</a></li>
+                                    <li><a href="/onboarding">Sign up</a></li>
                                 </ul>
                             </div>
 
@@ -107,7 +107,7 @@ class DefaultFooter extends HTMLElement {
                         <div>
                             <form action="" method="POST">
                                 <textarea rows="3" class="footer-newsletter-form" placeholder="Enter your email address"></textarea>
-                                <a href="" class="default-button-green">Get Started</a>
+                                <a href="/onboarding" class="default-button-green">Get Started</a>
                             </form>
                         </div>
                     </div>
