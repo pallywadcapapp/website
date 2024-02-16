@@ -203,6 +203,17 @@ header {
     top:22%;
 }
 
+.offset-3 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.empower-pics {
+    height: 90%;
+    width: 90%;
+    border-radius:10px;
+}
+
 .services-title {
     font-size: 12px;
     letter-spacing: 3px;

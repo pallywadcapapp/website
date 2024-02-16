@@ -28,7 +28,7 @@ class DefaultHeader extends HTMLElement {
                                 </ul>
                                 <div>
                                     <a href="javascript:void(0);" id="sign-in" class="default-button default-transparent-button" data-link>Sign In</a>
-                                    <a href="/onboarding" class="default-button" data-link>Get Started</a>
+                                    <a href="/loans" class="default-button" data-link>Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ class DefaultFooter extends HTMLElement {
                     </div>
                     <div class="col-md-3 col-4 text-end">
                         <p class="mt-2">
-                            <a href="/onboarding" class="default-button-white">Get Started</a>
+                            <a href="/loans" class="default-button-white">Get Started</a>
                         </p>
                     </div>
                     <div class="col-md-12 mt-2">
@@ -107,7 +107,7 @@ class DefaultFooter extends HTMLElement {
                         <div>
                             <form action="" method="POST">
                                 <textarea rows="3" class="footer-newsletter-form" placeholder="Enter your email address"></textarea>
-                                <a href="/onboarding" class="default-button-green">Get Started</a>
+                                <a href="/loans" class="default-button-green">Get Started</a>
                             </form>
                         </div>
                     </div>

@@ -22,7 +22,7 @@ export default class extends DefaultView {
                                 Tell us about your loan needs, and let's make it happen!
                             </p>
                             <p class="translate-bottom-50 transition-100 transition-delay-1000">
-                                <a href="" class="default-button default-button-large">Request Loan</a>
+                                <a href="/onboarding" class="default-button default-button-large">Request Loan</a>
                             </p>
                         </div>
                         
@@ -44,10 +44,10 @@ export default class extends DefaultView {
                     <div class="col-md-6 offset-3 mt-3">
                         <ul class="nav nav-pills nav-fill">
                             <li class="nav-item">
-                                <a class="nav-link active" style="background-color:#33D290 !important" aria-current="page" href="javascript:;">Personal Loan</a>
+                                <a class="nav-link active" style="background-color:#33D290 !important" aria-current="page" href="/onboarding?type=personal">Personal Loan</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" style="background-color:#F88559 !important" href="javascript:;">Business Loan</a>
+                                <a class="nav-link active" style="background-color:#F88559 !important" href="/onboarding?type=business">Business Loan</a>
                             </li>
                         </ul>
                     </div>
