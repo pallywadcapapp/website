@@ -236,6 +236,16 @@ header {
     margin-right: 7px;
 }
 
+.orange-circle {
+    background: #F88559;
+    color: #ffffff;
+    border-radius: 50%;
+    padding:5px;
+    font-size: 11px;
+    line-height: 20px;
+    margin-right: 7px;
+}
+
 .default-button {
     display: inline-block;
     border-radius: 4px;

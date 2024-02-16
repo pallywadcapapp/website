@@ -44,14 +44,15 @@ export default class extends DefaultView {
                     <div class="col-md-6 offset-3 mt-3">
                         <ul class="nav nav-pills nav-fill">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="javascript:;">Personal Loan</a>
+                                <a class="nav-link active" style="background-color:#33D290 !important" aria-current="page" href="javascript:;">Personal Loan</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:;">Business Loan</a>
+                                <a class="nav-link active" style="background-color:#F88559 !important" href="javascript:;">Business Loan</a>
                             </li>
                         </ul>
                     </div>
-                    
+                    <br />
+                    <p style="font:Helvetica Neue; wieght: 400">Each loan type is a unique product and it's own details and interest rate</p>
                 </div>
             </div>
         
@@ -61,11 +62,12 @@ export default class extends DefaultView {
                     <div class="col-12 col-md-12">
                         <div class="px-5 py-5 d-lg-flex align-items-center ">
                             <div class="col-md-6 col-12">
-                                <p class="about-title">LOANING</p>
+                            <p class="about-title"><i class="fa fa-2x fa-solid fa-pen green-circle"></i></p>
+                            <p class="about-title">TLOANING</p>
                                 <h4 class="stop-worry-title">Loans, minus the
                                 paperwork and haggling.
                                 </h4>
-                                <p class="stop-worry-sub-title" > 
+                                <p  style="font: Helvetica Neue; color: #ADADAD;"> 
                                     We make loaning uncomplicated by setting clear
                                     criteria that you can view beforehand to decide if we
                                     fit your needs.
@@ -82,90 +84,67 @@ export default class extends DefaultView {
                         </div>
                     </div>
                 </div>
+
+                <div class="row ">
+                    <div class="col-12 col-md-12">
+                        <div class="px-5 py-5 d-lg-flex align-items-center ">
+                            
+                            <div class="col-md-6 col-12 text-center">
+                                <img src="assets/img/woman-on-pc.jpg" class="stop-worry-pic"  />
+                        
+                            </div>
+                            <div class="col-md-6 col-12">
+                            <p class="about-title"><i class="fa fa-2x fa-chart-line orange-circle"></i></p>
+                                <p class="about-title">TYPES OF LOANS</p>
+                                <h4 class="stop-worry-title">Fund your business with supportive scheme
+                                </h4>
+                                <p style="font: Helvetica Neue; color: #ADADAD;" > 
+                                Whether you’re a small business that just starting out or a company affected by recession, we have schemes that help you get back on track
+                                </p>
+                                <a href="">LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         
                 
         
                 <div class="row mt-4">
-                    <div class="col-md-6 col-12">
+                    <div class="col-md-12 col-12">
                         <div class="dark-grey-1 px-5 py-5">
+                        <p class="about-title">BENEFITSS</p>
                             <h4 class="stop-worry-title">
-                                Change the way you
-                                manage you money.</h4>
-                            <p class="stop-worry-sub-title"> Don't let the lack of funds stop you from
-                                living your dreams. Get the financial support
-                                you need to make the most out of money.
-                            </p>
-                            <div>
-                                <img src="assets/img/get-access.png" class="img-fluid" />
+                            Fair, flexible loan plans that don’t cost
+                            you an arm and a leg.</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <span><i class="fa fa-2x fa-light fa-store green-circle"></i><b style="margin-left:5%">Convenienc first</b></span>
+                                
+                                <p style="font: Helvetica Neue; color: #ADADAD;margin-top:20px;"> 
+                                Whether you’re a small business that just starting out or a company affected by recession, we have schemes that help you get back on track
+                                </p>
                             </div>
+                            <div class="col-md-4 col-12">
+                                <span><i class="fa fa-2x fa-regular fa-heart green-circle"></i><b style="margin-left:5%">Support that’s humant</b></span>
+                                
+                                <p style="font: Helvetica Neue; color: #ADADAD;margin-top:20px;"> 
+                                Not sure about the details of the loans? Need help with a second loan? We’re here to help 24/7.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <span><i class="fa fa-2x fa-light fa-cloud green-circle"></i><b style="margin-left:5%">Apply from anywhere</b></span>
+                                
+                                <p style="font: Helvetica Neue; color: #ADADAD;margin-top:20px;"> 
+                                We make applying for loans easy - fill the form in minutes from anywhere, anytime.
+                                </p>
+                            </div>
+                        </div>
                         </div>
                         
                     </div>
-                    <div class="col-md-6 col-12">
-                        <div class="dark-grey-1 px-5 py-5">
-                            <h4 class="stop-worry-title">
-                                Access business fundings in hours/days.</h4>
-                            <p class="stop-worry-sub-title"> 
-                                Get your business and projects on the move with our lending plans.
-                            </p>
-                            <div class="white-bg-form shadow py-4 px-5 rounded">
-                                <form action="" method="POST">
-                                    <div class="form-group">
-                                        <label><b>Name<span class="text-danger">*</span></b></label>
-                                        <input type="text" class="form-control" placeholder="Enter your name and surname" />
-                                    </div>
-        
-                                    <div class="form-group mt-3">
-                                        <label><b>What type of loan works for you?
-                                            <span class="text-danger">*</span></b></label><br>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">Personal</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">Business</label>
-                                        </div>
-                                        <div class="">
-                                            <p class="mt-3 text-center">
-                                                <a href="" class="default-button default-rounded ">Continue &raquo;</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    
-                                </form>
-                            </div>
-                        </div>
-                        
-                    </div>
+                    
                 </div>
             
-            </div>
-        
-            <div class="light-blue px-5 py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <div class="about-holder">
-                                <p class="about-title">About Us</p>
-                                <hr class="greybg2">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <h4>
-                                Pallywad Capital is a leading
-                                financial institution dedicated to
-                                empowering individuals and 
-                                businesses with financial
-                                solutions.
-                            </h4>
-                            <p>
-                                Our innovative and accessible lending solutions redefine the financial experience, making
-        capital accessible to every aspiring individual and business in Lagos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         
             <default-footer></default-footer>
