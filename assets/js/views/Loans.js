@@ -63,7 +63,7 @@ export default class extends DefaultView {
                         <div class="px-5 py-5 d-lg-flex align-items-center ">
                             <div class="col-md-6 col-12">
                             <p class="about-title"><i class="fa fa-2x fa-solid fa-pen green-circle"></i></p>
-                            <p class="about-title">TLOANING</p>
+                            <p class="about-title">LOANING</p>
                                 <h4 class="stop-worry-title">Loans, minus the
                                 paperwork and haggling.
                                 </h4>
@@ -78,7 +78,7 @@ export default class extends DefaultView {
                                 </ul>
                             </div>
                             <div class="col-md-6 col-12 text-center">
-                                <img src="assets/img/woman-on-pc.jpg" class="stop-worry-pic"  />
+                                <img src="assets/img/loanj.png" class="stop-worry-pic"  />
                         
                             </div>
                         </div>
@@ -90,7 +90,7 @@ export default class extends DefaultView {
                         <div class="px-5 py-5 d-lg-flex align-items-center ">
                             
                             <div class="col-md-6 col-12 text-center">
-                                <img src="assets/img/woman-on-pc.jpg" class="stop-worry-pic"  />
+                                <img src="assets/img/loanI.png" class="stop-worry-pic"  />
                         
                             </div>
                             <div class="col-md-6 col-12">
