@@ -14,7 +14,7 @@ export default class extends DefaultView {
                 <div class="row">
                     <div class="col-md-7 col-12 ms-auto me-auto mt-4">
                         <div id="onboarding-forms" class="white-bg rounded div-shadow onboarding-form ">
-                            <form id="step-1"  >
+                            <form id="step-1">
                                 <div class="text-center mt-3 px-8">
                                     <img src="../assets/img/top-continue-graphic.png" class="onboard-icon" />
                                     <h3>Let's get started</h3>
@@ -33,7 +33,7 @@ export default class extends DefaultView {
                                     <span toggle="#password" class="fa fa-eye-slash eye-icon toggle-password"></span>
                                 </div>
                                 <div class="form-group mt-3 px-7">
-                                    <button id="continue" class="continue-button">Continue</button>
+                                    <button id="continue" class="continue-button" type="button">Continue</button>
                                     <a href="https://app.pallywad.com/sign-in" class="have-account mt-3">Already have an account? <span>Sign In</span></a>
                                 </div>
                                 <hr class="mt-4 mb-4">

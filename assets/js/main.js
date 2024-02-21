@@ -46,6 +46,7 @@ const loan_app_url = 'https://app.pallywad.com';
 $('body').on('click','#continue', function(e){
 
     if($("#step-1").valid()){
+        $('#onboarding-forms').pleaseWait();
         e.preventDefault();
         let email = $('#email').val();
         let password  = $('#password').val();
@@ -65,6 +66,7 @@ $('body').on('click','#continue', function(e){
                 displayToast('error',d.responseJSON.message, d.responseJSON.status)
             },
             success: function(d){
+                $('#onboarding-forms').pleaseWait('stop');
                 console.log(d.status);
                 if(d.status=="success"){
                     localStorage.setItem("email", email);
@@ -73,9 +75,14 @@ $('body').on('click','#continue', function(e){
                     location.href = "/onboarding-2";
                 }
                 else {
+                    $('#onboarding-forms').pleaseWait('stop');
                     displayToast('error', "Email is already registered to another user", "Error");
                 }
                 
+            },
+            error: function(e){
+                $('#onboarding-forms').pleaseWait('stop');
+                displayToast('error', "Email Invalid", "Error");
             }
         })
 
@@ -94,6 +101,7 @@ $(document).ready(function(){
 
 $('body').on('click', '#verifyEmail', function(e){
     e.preventDefault();
+    $('#onboarding-forms').pleaseWait();
     inputElements = $('.pin').map((i, e) => e.value).get();
     console.log(inputElements[0]);
     username = localStorage.getItem('email');
@@ -118,12 +126,18 @@ $('body').on('click', '#verifyEmail', function(e){
         success: function(d){
             console.log(d.status);
             if(d.message==true){
+                $('#onboarding-forms').pleaseWait('stop');
                 location.href = "/onboarding-3";
             }
             else {
+                $('#onboarding-forms').pleaseWait('stop');
                 displayToast('error', "PIN Incorrect!", "Error");
             }
             
+        },
+        error: function(e){
+            $('#onboarding-forms').pleaseWait('stop');
+            displayToast('error', "Email Invalid", "Error");
         }
     })
 })
@@ -134,6 +148,7 @@ $('body').on('click', '#sign-in', function(e){
 
 //onboarding page 3
 $('body').on('click', '#submit-onboarding', function(e){
+    $('#onboarding-forms').pleaseWait();
     if($("#step-2").valid()){
         e.preventDefault(); 
         let api_endpoint = '/api/v1/Auth/register';
@@ -168,6 +183,7 @@ $('body').on('click', '#submit-onboarding', function(e){
                 displayToast('error', d.responseJSON.message, d.responseJSON.status);
             },
             success: function(d){
+                $('#onboarding-forms').pleaseWait('stop');
                 console.log(d.status);
                 if(d.status=='Success'){
                     displayToast('success', "Your account was created successfully", "Signup Successful");
@@ -182,6 +198,10 @@ $('body').on('click', '#submit-onboarding', function(e){
                     displayToast("error", d.message, d.status);
                 }
                 
+            },
+            error: function(e){
+                $('#onboarding-forms').pleaseWait('stop');
+                displayToast('error', "Error signing up. Kindly check input data", "Signup Error");
             }
         })
     }
