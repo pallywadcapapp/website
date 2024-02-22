@@ -13,7 +13,7 @@ export default class extends DefaultView {
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 col-12 ms-auto me-auto mt-4">
-                        <div id="onboarding-forms" class="white-bg rounded div-shadow onboarding-form ">
+                        <div id="onboarding-forms" class="white-bg rounded div-shadow onboarding-form onb3 ">
                         
                             <form id="step-2"  >
                                 <div class="text-center mt-3 px-8">
@@ -22,6 +22,29 @@ export default class extends DefaultView {
                                     <p>Personal information you give help us to
                                     know you better.</p>
                                 </div>
+                                
+                                <div class="form-group px-7 mt-3">
+                                    <label>Password <span class="text-danger">*</span></label>
+                                    <input type="password" required class="form-control" id="password" name="password"
+                                    onkeyup="checkPasswordStrength();" placeholder="Create a password">
+                                    <span class="lock-icon"><img src="../assets/img/padlock-icon.png" /></span>
+                                    <span toggle="#password" class="fa fa-eye-slash eye-icon toggle-password"></span>
+                                </div>
+                                <div id="password-strength-status"></div>
+                                <div id="message">
+                                <h6>Password must contain the following:</h6>
+                                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                <p id="number" class="invalid">A <b>number</b></p>
+                                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                              </div>
+                                <div class="form-group px-7 mt-3">
+                                    <label>Confirm Password <span class="text-danger">*</span></label>
+                                    <input type="password" required class="form-control" id="confirmpassword" name="confirmpassword" placeholder="confirm password">
+                                    <span class="lock-icon"><img src="../assets/img/padlock-icon.png" /></span>
+                                    <span toggle="#confirmpassword" class="fa fa-eye-slash eye-icon toggle-password"></span>
+                                </div>
+                                <div style="margin-top: 7px;" id="CheckPasswordMatch"></div>
                                 <div class="form-group px-7 mt-3">
                                     <label>Firstname <span class="text-danger">*</span></label>
                                     <input type="text" required class="form-control" id="firstname" name="firstname" placeholder="Your firstname">

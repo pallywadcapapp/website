@@ -90,6 +90,51 @@ $('body').on('click','#continue', function(e){
     }
 })
 
+$('body').on('click','#resendToken', function(e){
+
+    
+        $('#onboarding-forms').pleaseWait();
+        e.preventDefault();
+        let email = localStorage.getItem('email');
+        //let password  = $('#password').val();
+        let api_endpoint = "/api/v1/Auth/newUser";
+
+        //check email if available
+        let data =  {
+            "username": email
+        }
+
+        $.ajax({
+            type:'get',
+            url: api_url+api_endpoint,
+            headers: { 'Content-Type': 'application/json' },
+            data: data,
+            error: function(d){
+                displayToast('error',d.responseJSON.message, d.responseJSON.status)
+            },
+            success: function(d){
+                $('#onboarding-forms').pleaseWait('stop');
+                console.log(d.status);
+                if(d.status=="success"){
+                    
+                displayToast('success', "Token sent to your email", "Success");
+                $('#resendToken').hide();
+                    localStorage.setItem("verificationPin", d.message);
+                }
+                else {
+                    $('#onboarding-forms').pleaseWait('stop');
+                    displayToast('error', "Email is already registered to another user", "Error");
+                }
+                
+            },
+            error: function(e){
+                $('#onboarding-forms').pleaseWait('stop');
+                displayToast('error', "Email Invalid", "Error");
+            }
+        })
+
+})
+
 //onboarding page 2
 $(document).ready(function(){
     $('.pin').segmentedInput({
@@ -137,7 +182,8 @@ $('body').on('click', '#verifyEmail', function(e){
         },
         error: function(e){
             $('#onboarding-forms').pleaseWait('stop');
-            displayToast('error', "Email Invalid", "Error");
+            displayToast('error', "Invalid/Expired Token", "Error");
+            initTimer();
         }
     })
 })
@@ -157,10 +203,11 @@ $('body').on('click', '#submit-onboarding', function(e){
         let othernames = $('[name=othernames]').val();
         let phoneNo = $('[name=phoneNo]').val();
         let email = localStorage.getItem('email');
-        let password = localStorage.getItem('password');
-        let confirmPassword = password;
+        let password = $('#password').val();//localStorage.getItem('password');
+        //let confirmPassword = password;
+        let confirmPassword = $('#confirmpassword').val();
         let ssn = "";
-        let type = "";
+        let type = "1";
 
         let data =  {
             "firstname": firstname,
@@ -195,7 +242,9 @@ $('body').on('click', '#submit-onboarding', function(e){
                     }, 5000);
                 }
                 else {
-                    displayToast("error", d.message, d.status);
+                    //displayToast("error", d.message, d.status);
+                    
+                displayToast('error', "Error signing up. Kindly check input data", "Signup Error");
                 }
                 
             },
@@ -204,6 +253,9 @@ $('body').on('click', '#submit-onboarding', function(e){
                 displayToast('error', "Error signing up. Kindly check input data", "Signup Error");
             }
         })
+    }else{
+        $('#onboarding-forms').pleaseWait('stop');
+        displayToast('error', "Error signing up. Kindly check input data", "Signup Error");
     }
 })
 

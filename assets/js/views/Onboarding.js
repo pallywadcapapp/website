@@ -26,12 +26,6 @@ export default class extends DefaultView {
                                     <input type="email" required class="form-control" id="email" name="email" placeholder="Your valid email">
                                     <span class="email-icon"><img src="../assets/img/email-icon.png" /></span>
                                 </div>
-                                <div class="form-group px-7 mt-3">
-                                    <label>Create Password <span class="text-danger">*</span></label>
-                                    <input type="password" required class="form-control" id="password" name="password" placeholder="Create a password">
-                                    <span class="lock-icon"><img src="../assets/img/padlock-icon.png" /></span>
-                                    <span toggle="#password" class="fa fa-eye-slash eye-icon toggle-password"></span>
-                                </div>
                                 <div class="form-group mt-3 px-7">
                                     <button id="continue" class="continue-button" type="button">Continue</button>
                                     <a href="https://app.pallywad.com/sign-in" class="have-account mt-3">Already have an account? <span>Sign In</span></a>

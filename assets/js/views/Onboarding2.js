@@ -15,7 +15,7 @@ export default class extends DefaultView {
                     <div class="col-md-7 col-12 ms-auto me-auto mt-4">
                         <div id="onboarding-forms" class="white-bg rounded div-shadow onboarding-form ">
                         
-                            <form id="step-2" action="POST" >
+                            <form id="step-2">
                                 <div class="text-center mt-3 px-8">
                                     <a href="/onboarding" data-link><img src="../assets/img/top-continue-graphic.png" class="onboard-icon" /></a>
                                     <h3>Let's verify your email</h3>
@@ -32,6 +32,13 @@ export default class extends DefaultView {
                                 <div class="form-group mt-5 px-7">
                                     <button id="verifyEmail" class="continue-button">Verify Email</button>
                                 </div>
+                                <div id="timer" style="text-align:center">
+                                <div id="days"></div>
+                                <div id="hours"></div>
+                                <span id="minutes"></span>
+                                <span id="seconds"></span>
+                                </div>
+                                <div class="text-center mt-3" id="resend"><button id="resendToken" type="button" class="btn btn-primary"> Resend Token</button></div>
                                 <hr class="mt-4 mb-4">
                                 <div class="privacy-area text-center">
                                     <img src="../assets/img/shield-check.png" class="me-1" />Pallywad will not share your confidential data to a third party. Read our
