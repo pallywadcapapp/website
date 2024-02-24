@@ -23,12 +23,12 @@ class DefaultHeader extends HTMLElement {
                                         <a class="nav-link" href="#">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact Us</a>
+                                        <a class="nav-link" href="/contactus">Contact Us</a>
                                     </li>
                                 </ul>
                                 <div>
                                     <a href="javascript:void(0);" id="sign-in" class="default-button default-transparent-button" data-link>Sign In</a>
-                                    <a href="/loans" class="default-button" data-link>Get Started</a>
+                                    <a href="/onboarding" class="default-button" data-link>Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -51,11 +51,11 @@ class DefaultFooter extends HTMLElement {
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-8 pe-5">
-                        <h4>Meet Pallywad Capital, A dynamic and forward-thinking lending institution</h4>
+                        <h4>Meet PallyWad Capital, A dynamic and forward-thinking lending institution</h4>
                     </div>
                     <div class="col-md-3 col-4 text-end">
                         <p class="mt-2">
-                            <a href="/loans" class="default-button-white">Get Started</a>
+                            <a href="/onboarding" class="default-button-white">Get Started</a>
                         </p>
                     </div>
                     <div class="col-md-12 mt-2">
@@ -92,8 +92,8 @@ class DefaultFooter extends HTMLElement {
                             <div class="col-md-4">
                                 <p class="footer-link-title">COMPANY</p>
                                 <ul class="footer-link">
-                                    <li><a href="">Terms of service</a></li>
-                                    <li><a href="">Privacy policy</a></li>
+                                    <li><a href="/terms">Terms of service</a></li>
+                                    <li><a href="/privacy">Privacy policy</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ class DefaultFooter extends HTMLElement {
                         <div>
                             <form action="" method="POST">
                                 <textarea rows="3" class="footer-newsletter-form" placeholder="Enter your email address"></textarea>
-                                <a href="/loans" class="default-button-green">Get Started</a>
+                                <a href="/onboarding" class="default-button-green">Get Started</a>
                             </form>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ class DefaultFooter extends HTMLElement {
                         <hr class="footerline">
                     </div>
                     <div class="col-md-9">
-                        &copy; 2024 Pallywad Capital. All rights reserved.
+                        &copy; 2024 PallyWad Capital. All rights reserved.
                     </div>
                     <div class="col-md-3">
                         <ul class="footer-social-links">

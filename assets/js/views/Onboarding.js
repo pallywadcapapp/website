@@ -3,7 +3,7 @@ import DefaultView from "./DefaultView.js";
 export default class extends DefaultView {
     constructor(params) {
         super(params);
-        this.setTitle("Onboarding User - Getting Started | Pallywad Capital ");
+        this.setTitle("Onboarding User - Getting Started | PallyWad Capital ");
     }
 
     async getHtml() {
@@ -18,7 +18,7 @@ export default class extends DefaultView {
                                 <div class="text-center mt-3 px-8">
                                     <img src="../assets/img/top-continue-graphic.png" class="onboard-icon" />
                                     <h3>Let's get started</h3>
-                                    <p>Create a user account with Pallywad Capital,
+                                    <p>Create a user account with PallyWad Capital,
                                     Provide basic personal Information</p>
                                 </div>
                                 <div class="form-group px-7 mt-3">

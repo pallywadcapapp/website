@@ -3,7 +3,7 @@ import DefaultView from "./DefaultView.js";
 export default class extends DefaultView {
     constructor(params) {
         super(params);
-        this.setTitle("Pallywad Capital | Your reliable source for loans and more.");
+        this.setTitle("PallyWad Capital | Your reliable source for loans and more.");
     }
 
     async getHtml() {
@@ -22,7 +22,7 @@ export default class extends DefaultView {
                                 Unlock your potential Opportunities with Hassle-Free Loans.
                             </p>
                             <p class="translate-bottom-50 transition-100 transition-delay-1000">
-                                <a href="/loans" class="default-button">Get Started</a>
+                                <a href="/onboarding" class="default-button">Get Started</a>
                             </p>
                         </div>
                         <div class="col-md-6 col-12 light-blue text-center ">
@@ -70,7 +70,7 @@ export default class extends DefaultView {
                                     transparent lending criteria and process.
                                 </p>
                                 <p class="mt-5" >
-                                    <a href="/loans" class="default-button">Get Started Now</a>
+                                    <a href="/onboarding" class="default-button">Get Started Now</a>
                                 </p>
                             </div>
                             <div class="col-md-6 col-12 text-center">
@@ -151,7 +151,7 @@ export default class extends DefaultView {
                         </div>
                         <div class="col-md-6 col-12">
                             <h4>
-                                Pallywad Capital is a leading
+                                PallyWad Capital is a leading
                                 financial institution dedicated to
                                 empowering individuals and 
                                 businesses with financial

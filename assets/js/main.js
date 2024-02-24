@@ -218,7 +218,8 @@ $('body').on('click', '#submit-onboarding', function(e){
             "password" : password,
             "confirmPassword" : confirmPassword,
             "ssn": ssn,
-            "type" : type
+            "type" : type,
+            "imgUrl":"NC/R.png"
         }
 
         $.ajax({

@@ -3,7 +3,7 @@ import DefaultView from "./DefaultView.js";
 export default class extends DefaultView {
     constructor(params) {
         super(params);
-        this.setTitle("Onboarding User - Getting Started | Pallywad Capital ");
+        this.setTitle("Onboarding User - Getting Started | PallyWad Capital ");
     }
 
     async getHtml() {
@@ -41,7 +41,7 @@ export default class extends DefaultView {
                                 <div class="text-center mt-3" id="resend"><button id="resendToken" type="button" class="btn btn-primary"> Resend Token</button></div>
                                 <hr class="mt-4 mb-4">
                                 <div class="privacy-area text-center">
-                                    <img src="../assets/img/shield-check.png" class="me-1" />Pallywad will not share your confidential data to a third party. Read our
+                                    <img src="../assets/img/shield-check.png" class="me-1" />PallyWad will not share your confidential data to a third party. Read our
                                     <a href="">Privacy Policy.</a>
                                 </div>
                             </form>
