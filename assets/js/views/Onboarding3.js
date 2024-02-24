@@ -61,10 +61,11 @@ export default class extends DefaultView {
                                 </div>
                                 <div class="form-group px-7 mt-3">
                                     <label>Mobile No<span class="text-danger">*</span></label>
-                                    <input type="text" required class="form-control" id="phoneNo" name="phoneNo" placeholder="Valid phone number">
+                                    <input type="number" required class="form-control" id="phoneNo"  name="phoneNo" placeholder="Valid phone number"
+                                    onchange="validatePhoneNumber()">
                                     <span class="phone-icon fa-solid fa-phone"></span>
                                 </div>
-                                
+                                <div id="phoneValidationMsg" style="color:red"></div>
                                 <div class="form-group mt-5 px-7">
                                     <button id="submit-onboarding" class="continue-button">Continue</button>
                                 </div>

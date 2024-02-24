@@ -20,6 +20,26 @@ function checkPasswordStrength() {
 		}
 	}
 }
+
+function validatePhoneNumber() {
+    // Get and trim phone number input
+    const phoneNumber = document.getElementById('phoneNo').value.trim();
+
+    // Regex pattern for 10-digit phone number
+    const pattern = /^\d{11}$/;
+
+    // Validate phone number and update message
+    
+    const isValid = pattern.test(phoneNumber);
+    document.getElementById('phoneValidationMsg').textContent = isValid ? '' : 'Please enter a valid 11-digit phone number.';
+
+    if(phoneNumber< 1){
+        document.getElementById('phoneValidationMsg').textContent = isValid ? '' : 'Please enter a valid 11-digit phone number.';
+    }
+    // Return validation status
+    return isValid;
+}
+
 $(function(){
 
     $("#confirmpassword").on('keyup', function(){
