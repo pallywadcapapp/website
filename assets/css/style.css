@@ -621,7 +621,6 @@ hr.footerline {
 .onboarding-form {
     font-size: 15px;
     line-height: 20px;
-    padding: 35px 60px;
 }
 
 .onboarding-form h3 {
@@ -779,8 +778,8 @@ hr.footerline {
     justify-content: center;
 }
 .pinClass {
-    width: 64px;
-    height: 64px;
+    width: 57px;
+    height: 57px;
     text-align: center;
     margin: 0 5px;
     padding-left: 0px !important;
