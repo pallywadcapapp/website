@@ -83,7 +83,7 @@ export default class extends DefaultView {
         
                 
         
-                <div class="row mt-4">
+                <!--<div class="row mt-4">
                     <div class="col-md-6 col-12">
                         <div class="dark-grey-1 px-5 py-5">
                             <h4 class="stop-worry-title">
@@ -136,7 +136,7 @@ export default class extends DefaultView {
                         </div>
                         
                     </div>
-                </div>
+                </div>-->
             
             </div>
         

@@ -25,20 +25,23 @@ export default class extends DefaultView {
                           </div>
                                 <form id="contactForm" name="contactForm">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" name="name" id="name" placeholder="Name">
                                             </div>
+                                            <br />
                                         </div>
-                                        <div class="col-md-6"> 
+                                        <div class="col-md-12"> 
                                             <div class="form-group">
                                                 <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                                             </div>
+                                            <br />
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                                             </div>
+                                            <br />
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
@@ -47,7 +50,7 @@ export default class extends DefaultView {
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="button" value="Send Message" class="btn btn-primary">
+                                                <button type="button" class="btn default-button ">Send Message</button>
                                                 <div class="submitting"></div>
                                             </div>
                                         </div>
@@ -56,14 +59,14 @@ export default class extends DefaultView {
                             </div>
                         </div>
                         <div class="col-md-5 d-flex align-items-stretch">
-                            <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
-                                <h3 class="mb-4 mt-md-4">Contact us</h3>
+                            <div class="info-wrap w-100 p-lg-5 p-4" style="background-color: #24488F; color: #fff !important;">
+                                <h3 class="mb-4 mt-md-4" style="color: #fff !important;">Contact us</h3>
                         <div class="dbox w-100 d-flex align-items-start">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="fa fa-map-marker"></span>
                             </div>
                             <div class="text pl-3">
-                            <p><span>Address:</span> 4 Gbangbala Street, Ikate-Elegushi, Lagos</p>
+                           <span><b>Address: </b></span> 4 Gbangbala Street, Ikate-Elegushi, Lagos
                           </div>
                       </div>
                         <div class="dbox w-100 d-flex align-items-center">
@@ -71,7 +74,7 @@ export default class extends DefaultView {
                                 <span class="fa fa-phone"></span>
                             </div>
                             <div class="text pl-3">
-                            <p><span>Phone:</span> <a href="tel://08023469049">08023469049</a></p>
+                            <span><b>Phone: </b></span> <a style="color: #fff !important;" href="tel://08023469049">08023469049</a>
                           </div>
                       </div>
                         <div class="dbox w-100 d-flex align-items-center">
@@ -79,7 +82,7 @@ export default class extends DefaultView {
                                 <span class="fa fa-paper-plane"></span>
                             </div>
                             <div class="text pl-3">
-                            <p><span>Email:</span> <a href="mailto:info@pallywad.com">info@pallywad.com</a></p>
+                            <span><b>Email: </b></span> <a style="color: #fff !important;" href="mailto:info@pallywad.com">info@pallywad.com</a>
                           </div>
                       </div>
                         <div class="dbox w-100 d-flex align-items-center">
@@ -87,7 +90,7 @@ export default class extends DefaultView {
                                 <span class="fa fa-globe"></span>
                             </div>
                             <div class="text pl-3">
-                            <p><span>Website</span> <a href="javascript::voud(0);"> pallywad.com</a></p>
+                            <span><b>Website </b></span> <a style="color: #fff !important;" href="javascript::voud(0);"> PallyWad.com</a>
                           </div>
                       </div>
                   </div>
@@ -96,7 +99,7 @@ export default class extends DefaultView {
                 </div>
             </div>
         </div>
-        
+        <br />
             <default-footer></default-footer>
         </div>
         `

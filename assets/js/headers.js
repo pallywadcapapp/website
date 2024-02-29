@@ -20,10 +20,10 @@ class DefaultHeader extends HTMLElement {
                                         <a class="nav-link" href="/loans" data-link>Loans</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About Us</a>
+                                        <a class="nav-link" href="/aboutus" data-link>About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/contactus">Contact Us</a>
+                                        <a class="nav-link" href="/contactus" data-link>Contact Us</a>
                                     </li>
                                 </ul>
                                 <div>
@@ -63,21 +63,21 @@ class DefaultFooter extends HTMLElement {
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-md-3 col-12">
+                    <div class="col-md-4 col-12">
                         <img src="assets/img/pallywad-logo-white.png" class="img-fluid" />
                         <p class="fueling-dreams">
                             Fueling Dreams, Powering Growth
                         </p>
                     </div>
-                    <div class="col-md-6 col-12">
+                    <div class="col-md-8 col-12">
                         <div class="row">
                             <div class="col-md-4">
                                 <p class="footer-link-title">PAGES</p>
                                 <ul class="footer-link">
-                                    <li><a href="">Home</a></li>
-                                    <li><a href="">Loans</a></li>
-                                    <li><a href="">About Us</a></li>
-                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="/" data-link>Home</a></li>
+                                    <li><a href="loans" data-link>Loans</a></li>
+                                    <li><a href="aboutus" data-link>About Us</a></li>
+                                    <li><a href="contactus" data-link>Contact Us</a></li>
                                 </ul>
                             </div>
 
@@ -93,13 +93,13 @@ class DefaultFooter extends HTMLElement {
                                 <p class="footer-link-title">COMPANY</p>
                                 <ul class="footer-link">
                                     <li><a href="/terms">Terms of service</a></li>
-                                    <li><a href="/privacy">Privacy policy</a></li>
+                                    <li><a href="/privacy" data-link>Privacy policy</a></li>
                                 </ul>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="col-md-3 col-12">
+                    <!--<div class="col-md-3 col-12">
                         <p class="footer-link-title">NEWSLETTER</p>
                         <p class="footer-newsletter-desc">Subscribe to stay in touch, so as to get 
                             updates on our lending structure improvements
@@ -110,7 +110,7 @@ class DefaultFooter extends HTMLElement {
                                 <a href="/onboarding" class="default-button-green">Get Started</a>
                             </form>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col-md-12 mt-2">
                         <hr class="footerline">
                     </div>
