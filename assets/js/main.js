@@ -206,7 +206,8 @@ $('body').on('click', '#submit-onboarding', function(e){
         let password = $('#password').val();//localStorage.getItem('password');
         //let confirmPassword = password;
         let confirmPassword = $('#confirmpassword').val();
-        let ssn = "";
+        
+        let ssn = $('[name=nin]').val();
         let type = "1";
 
         let data =  {

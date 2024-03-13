@@ -66,6 +66,11 @@ export default class extends DefaultView {
                                     <span class="phone-icon fa-solid fa-phone"></span>
                                 </div>
                                 <div id="phoneValidationMsg" style="color:red"></div>
+                                <div class="form-group px-7 mt-3">
+                                    <label>NIN <span class="text-danger">*</span></label>
+                                    <input type="text" required class="form-control" id="nin" name="nin" placeholder="National Identification Number">
+                                    <span class="lock-icon"><img src="../assets/img/padlock-icon.png" /></span>
+                                   </div>
                                 <div class="form-group mt-5 px-7">
                                     <button id="submit-onboarding" class="continue-button">Continue</button>
                                 </div>
