@@ -24,32 +24,26 @@ export default class extends DefaultView {
                     <div class="col-md-12">
                         <p>
                             <span>
-                            PallyWad Capital Ltd is an innovative financial services company dedicated to improving financial inclusivity by 
-                            providing seamless and tailored funding solutions through a user-centric and fully online experience. 
-                            </span>
-                        </p>
-                        <p>
-                            <span>
                             PallyWad Capital is an innovative financial institution, reshaping the financial landscape by leveraging advanced technology
                              to provide a seamless and fully online lending experience to individuals and businesses. Our dynamic approach adapts to industry and economic trends, and we stand as a catalyst for financial inclusivity in Nigeria by providing accessible and technology-driven lending solutions. 
                             </span>
                         </p>
                         <p>
-                            <h5><b>Vision</b></h5> <br />
+                            <h5><b>Vision</b></h5>
                             <span>
                                 Our vision is to be the leading force in reshaping financial experience, where financial services are seamlessly
                              integrated into the lives of our customers, unlocking opportunities and creating lasting value. 
                             </span>
                         </p>
                         <p>
-                            <h5><b>Mission</b></h5> <br />
+                            <h5><b>Mission</b></h5>
                             <span>
                                 We are on a mission to empower dreams, fuel growth, and foster financial inclusion. We aim to make capital accessible to 
                                 every aspiring individual and business in Lagos, through seamless cutting-edge technology and tailored funding solutions. 
                             </span>
                         </p>
                         <p>
-                            <h5><b>Core Values - FITS </b></h5> <br />
+                            <h5><b>Core Values - FITS </b></h5>
                             <ul>
                                 <li>Flexibility </li>
                                 <li>Integrity </li>
