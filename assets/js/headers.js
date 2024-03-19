@@ -25,6 +25,9 @@ class DefaultHeader extends HTMLElement {
                                     <li class="nav-item">
                                         <a class="nav-link" href="/contactus" data-link>Contact Us</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="default-button" href="/faqs" data-link>FAQs</a>
+                                    </li>
                                 </ul>
                                 <div>
                                     <a href="javascript:void(0);" id="sign-in" class="default-button default-transparent-button" data-link>Sign In</a>
@@ -51,7 +54,7 @@ class DefaultFooter extends HTMLElement {
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-8 pe-5">
-                        <h4>Meet PallyWad Capital, A dynamic and forward-thinking lending institution</h4>
+                        <h4>PallyWad Capital, a dynamic and forward-thinking financial institution</h4>
                     </div>
                     <div class="col-md-3 col-4 text-end">
                         <p class="mt-2">
@@ -66,7 +69,7 @@ class DefaultFooter extends HTMLElement {
                     <div class="col-md-4 col-12">
                         <img src="assets/img/pallywad-logo-white.png" class="img-fluid" />
                         <p class="fueling-dreams">
-                            Fueling Dreams, Powering Growth
+                            Empowering your financial journey!
                         </p>
                     </div>
                     <div class="col-md-8 col-12">
@@ -78,6 +81,7 @@ class DefaultFooter extends HTMLElement {
                                     <li><a href="loans" data-link>Loans</a></li>
                                     <li><a href="aboutus" data-link>About Us</a></li>
                                     <li><a href="contactus" data-link>Contact Us</a></li>
+                                    <li><a href="faqs" data-link>FAQs</a></li>
                                 </ul>
                             </div>
 

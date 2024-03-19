@@ -16,10 +16,10 @@ export default class extends DefaultView {
                     <div class="row ">
                         <div class="col-md-6 col-12 pe-5 ps-8">
                             <h3 class="mt-10 translate-bottom-50 transition-100 transition-delay-600">Empowering Your  Financial  Journey With
-                                Cutting-Edge Solutions
+                                Cutting-Edge Technology
                             </h3>
                             <p class="sub-title translate-bottom-50 transition-100 transition-delay-800">
-                                Unlock your potential Opportunities with Hassle-Free Loans.
+                                We help take your business further.
                             </p>
                             <p class="translate-bottom-50 transition-100 transition-delay-1000">
                                 <a href="/onboarding" class="default-button">Get Started</a>
@@ -35,11 +35,10 @@ export default class extends DefaultView {
             <div class="container-fluid mt-15">
                 <div class="row text-center ">
                     <p class="services-title" >SERVICES</p>
-                    <h4 class=" services-bold-caption col-12 col-md-10 offset-md-1" >Power up your business with a full-stack
-                        lending solution that fits your needs.
+                    <h4 class=" services-bold-caption col-12 col-md-10 offset-md-1" >Access to cashflow for short term opportunities. 
                     </h4>
                     <p class="sub-title">
-                        Lending that doesn't weigh you down.
+                        Short term financing to enhance long term profitability. 
                     </p>
                     <div class="col-12 col-md-4 offset-md-4 text-left mb-3">
                         <ul class="loan-type-list">
@@ -64,10 +63,8 @@ export default class extends DefaultView {
                         <div class="dark-grey-1 px-5 py-5 d-lg-flex align-items-center ">
                             <div class="col-md-6 col-12">
                             
-                                <h4 class="stop-worry-title">Stop worrying over finances
-                                    and run your business</h4>
-                                <p class="stop-worry-sub-title" > Get business loans approved within hours/days with 
-                                    transparent lending criteria and process.
+                                <h4 class="stop-worry-title">Allow your idle assets work for you. </h4>
+                                <p class="stop-worry-sub-title" > Use qualifying assets to access cash. 
                                 </p>
                                 <p class="mt-5" >
                                     <a href="/onboarding" class="default-button">Get Started Now</a>
