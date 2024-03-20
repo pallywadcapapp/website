@@ -140,23 +140,18 @@ export default class extends DefaultView {
             <div class="light-blue px-5 py-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-12">
+                        <div class="col-md-4 col-12">
                             <div class="about-holder">
                                 <p class="about-title">About Us</p>
                                 <hr class="greybg2">
                             </div>
                         </div>
-                        <div class="col-md-6 col-12">
+                        <div class="col-md-8 col-12">
                             <h4>
-                                PallyWad Capital is a leading
-                                financial institution dedicated to
-                                empowering individuals and 
-                                businesses with financial
-                                solutions.
+                            PallyWad Capital is an innovative financial institution, reshaping the financial landscape by leveraging advanced technology to provide a seamless and fully online lending experience to individuals and businesses.
                             </h4>
                             <p>
-                                Our innovative and accessible lending solutions redefine the financial experience, making
-        capital accessible to every aspiring individual and business in Lagos.
+                            We are dedicated to simplify the lending process by deploying seamless and tailored funding solutions, providing transparent and flexible terms, through a user-centric and fully online experience. 
                             </p>
                         </div>
                     </div>

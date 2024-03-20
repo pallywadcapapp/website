@@ -16,7 +16,7 @@ export default class extends DefaultView {
                     <div class="container">
                         <div class="row d-flex align-items-center">
                             <div class=" text-center translate-bottom-50 transition-100 transition-delay-800">
-                                <h3></h3>
+                                <h3>FAQs</h3>
                             </div>
                         </div>
                         <div class="row">
