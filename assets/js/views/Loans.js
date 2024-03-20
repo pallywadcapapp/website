@@ -16,7 +16,7 @@ export default class extends DefaultView {
                     <div class="row ">
                         <div class="col-md-12 col-12 pe-5 ps-8 text-center">
                             <h3 class="mt-10 translate-bottom-50 transition-100 transition-delay-600">
-                            Seamless loan application <br>processes
+                            Seamless loan application <br>process
                             </h3>
                             <p class="sub-title translate-bottom-50 transition-100 transition-delay-800">
                                 Fully online experience
@@ -99,7 +99,7 @@ export default class extends DefaultView {
                                 <p style="font: Helvetica Neue; color: #ADADAD;" > 
                                 Our business is to support your business. 
                                 </p>
-                                <a href="">LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-solid fa-arrow-right"></i></a>
+                                <a href="/faqs" data-link>LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -119,9 +119,9 @@ export default class extends DefaultView {
                                 
                                 <p style="font: Helvetica Neue; color: #ADADAD;margin-top:20px;"> 
                                     <ul>
-                                        <li>We understand that projections can change</li>
+                                        <li>We understand that projections can change.</li>
                                         <li>We provide flexible repayment terms. </li>
-                                        <li>No penalties for early loan repayment </li>
+                                        <li>No penalties for early loan repayment. </li>
                                     </ul>
                                 </p>
                             </div>

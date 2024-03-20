@@ -16,11 +16,11 @@ export default class extends DefaultView {
                     <div class="container">
                         <div class="row d-flex align-items-center">
                             <div class=" text-center translate-bottom-50 transition-100 transition-delay-800">
-                                <h3>Help & Support</h3>
+                                <h3></h3>
                             </div>
                         </div>
                         <div class="row">
-                        <p class="about-title mt-4">Frequently Asked Questions.</p>
+                        <p class="about-title mt-4"><b>Frequently Asked Questions.</b></p>
                         <div class=" p-2">
                             <div class="accordion accordion-flush" id="accordionFlushExample">
                                 <div class="accordion-item">
@@ -106,7 +106,7 @@ export default class extends DefaultView {
                                     <div class="accordion-body">
                                         <ul>
                                             <li>Experience is fully online until the point of collateral delivery.</li>
-                                            <li>Personal Loans Terms & Conditions and Business Loans Terms & Conditions (Links will be provided on the WebApp) </li>
+                                            <li>Personal Loans Terms & Conditions and Business Loans Terms & Conditions </li>
                                         </ul>
                                     </div>
                                     </div>
