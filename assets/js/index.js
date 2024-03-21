@@ -9,6 +9,7 @@ import Privacy from "./views/Privacy.js";
 import Contact from "./views/Contact.js";
 import About from "./views/About.js";
 import FAQs from "./views/FAQs.js";
+import LoanRequirements from "./views/LoanRequirements.js";
 
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
@@ -39,6 +40,7 @@ const router = async () => {
         {path:"/contactus" , view: Contact },
         {path:"/aboutus" , view: About },
         {path:"/faqs" , view: FAQs },
+        {path:"/loanrequirement" , view: LoanRequirements },
         {path:"/sign-in" , view: Signin }
     ]
 
