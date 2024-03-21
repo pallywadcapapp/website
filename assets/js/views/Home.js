@@ -147,11 +147,11 @@ export default class extends DefaultView {
                             </div>
                         </div>
                         <div class="col-md-8 col-12">
-                            <h4>
-                            PallyWad Capital is an innovative financial institution, reshaping the financial landscape by leveraging advanced technology to provide a seamless and fully online lending experience to individuals and businesses.
+                            <h4 style="font-size: 25px;">
+                                PallyWad Capital is an innovative financial institution, reshaping the financial landscape by leveraging advanced technology to provide a seamless and fully online lending experience to individuals and businesses. Our dynamic approach adapts to industry and economic trends, and we stand as a catalyst for financial inclusivity in Nigeria by providing accessible and technology-driven lending solutions.
                             </h4>
                             <p>
-                            We are dedicated to simplify the lending process by deploying seamless and tailored funding solutions, providing transparent and flexible terms, through a user-centric and fully online experience. 
+                            We aim to simplify the lending process by deploying seamless and tailored funding solutions, providing transparent and flexible terms, through a user-centric and fully online experience.
                             </p>
                         </div>
                     </div>
