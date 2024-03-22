@@ -96,8 +96,8 @@ class DefaultFooter extends HTMLElement {
                             <div class="col-md-4">
                                 <p class="footer-link-title">COMPANY</p>
                                 <ul class="footer-link">
-                                    <li><a href="/terms">Terms of service</a></li>
-                                    <li><a href="/privacy" data-link>Privacy policy</a></li>
+                                    <li><a href="/terms">Terms of Service</a></li>
+                                    <li><a href="/privacy" data-link>Privacy Policy</a></li>
                                 </ul>
                             </div>
                         </div>

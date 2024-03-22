@@ -3,7 +3,7 @@ import DefaultView from "./DefaultView.js";
 export default class extends DefaultView {
     constructor(params) {
         super(params);
-        this.setTitle("PallyWad Capital | Your reliable source for loans and more.");
+        this.setTitle("PallyWad Capital | Empowering your financial journey");
     }
 
     async getHtml() {
