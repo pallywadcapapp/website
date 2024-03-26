@@ -20,7 +20,7 @@ export default class extends DefaultView {
                             </div>
                         </div>
                         <div class="row">
-                        <p class="about-title mt-4"><b>Frequently Asked Questions.</b></p>
+                        <p class="about-title mt-4"><b></b></p>
                         <div class=" p-2">
                             <div class="accordion accordion-flush" id="accordionFlushExample">
                                 <div class="accordion-item">
@@ -106,7 +106,7 @@ export default class extends DefaultView {
                                     <div class="accordion-body">
                                         <ul>
                                             <li>Experience is fully online until the point of collateral delivery.</li>
-                                            <li>Personal Loans Terms & Conditions and Business Loans Terms & Conditions </li>
+                                            <li><a href="https://pallywad.com/loanrequirement" target="_parent">Personal Loans Terms & Conditions and Business Loans Terms & Conditions. </a> </li>
                                         </ul>
                                     </div>
                                     </div>

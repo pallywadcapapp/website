@@ -23,10 +23,12 @@ export default class extends DefaultView {
                     </div>
                     <div class="col-md-12">
                         <p>
+                            <h5><b>Who Are We?</b></h5>
                             <span>
-                            PallyWad Capital is an innovative financial institution, reshaping the financial landscape by leveraging advanced technology
-                             to provide a seamless and fully online lending experience to individuals and businesses. Our dynamic approach adapts to industry and economic trends, and we stand as a catalyst for financial inclusivity in Nigeria by providing accessible and technology-driven lending solutions. 
+                            PallyWad Capital Ltd is an innovative financial services company dedicated to improving financial inclusivity by providing seamless and convenient lending through a user-centric and fully online experience. <br /><br />
+                            
                             </span>
+                            <span>We aim to simplify the lending process by deploying seamless and tailored funding solutions, providing transparent and flexible terms, through a user-centric and fully online experience. </span>
                         </p>
                         <p>
                             <h5><b>Vision</b></h5>
@@ -43,12 +45,13 @@ export default class extends DefaultView {
                             </span>
                         </p>
                         <p>
-                            <h5><b>Core Values - FITS </b></h5>
+                            <h5><b>Core Values - FIRST! </b></h5>
                             <ul>
                                 <li>Flexibility </li>
                                 <li>Integrity </li>
-                                <li>Transparency </li>
+                                <li>Reliability </li>
                                 <li>Sensitivity </li>
+                                <li>Transparency </li>
                             </ul>
                         </p>
                         <p>
@@ -56,13 +59,12 @@ export default class extends DefaultView {
                             <ul>
                                 <li>
                                     <b>Personal Loans</b><br/>
-                                    <span>Catering to individuals with valuable collateral, requiring funding for education, home renovation, purchase of home appliances, or travel expenses. </span>
+                                    <span>For individuals with valuable collateral, requiring funding for emergency medical expenses, education, home renovation, purchase of home appliances, or travel expenses.</span>
                                 </li>
                                 <li>
                                     <b>Business Loans</b><br />
                                     <span>
-                                    Catering to established businesses with tangible assets, providing collateralized loans to support expansion, working 
-                                    capital needs, or equipment purchase.
+                                    For established businesses with tangible assets requiring funding for business expansion, working capital needs, operations or equipment purchases.
                                     </span>
                                 </li>
                             </ul>

@@ -16,10 +16,10 @@ export default class extends DefaultView {
                     <div class="row ">
                         <div class="col-md-12 col-12 pe-5 ps-8 text-center">
                             <h3 class="mt-10 translate-bottom-50 transition-100 transition-delay-600">
-                            Seamless loan application <br>process
+                            Seamless loan application <br>process.
                             </h3>
                             <p class="sub-title translate-bottom-50 transition-100 transition-delay-800">
-                                Fully online experience
+                                Fully online experience.
                             </p>
                             <p class="translate-bottom-50 transition-100 transition-delay-1000">
                                 <a href="/onboarding" class="default-button default-button-large">Request Loan</a>
@@ -52,7 +52,7 @@ export default class extends DefaultView {
                         </ul>
                     </div>
                     <br />
-                    <p style="font:Helvetica Neue; wieght: 400">Visit our <a href="/FAQs" data-link>FAQs</a> to see requirements for each product</p>
+                    <p style="font:Helvetica Neue; wieght: 400">Visit our <a href="/FAQs" data-link>FAQs</a> to see requirements for each product.</p>
                 </div>
             </div>
         
@@ -64,7 +64,7 @@ export default class extends DefaultView {
                             <div class="col-md-6 col-12">
                             <p class="about-title"><i class="fa fa-2x fa-solid fa-pen green-circle"></i></p>
                             <p class="about-title"></p>
-                                <h4 class="stop-worry-title">Transparent conditions, clear as day
+                                <h4 class="stop-worry-title">Transparent conditions, clear as day.
                                 </h4>
                                 <p  style="font: Helvetica Neue; color: #ADADAD;"> 
                                 No hidden charges, no additional costs.
@@ -126,7 +126,7 @@ export default class extends DefaultView {
                                 </p>
                             </div>
                             <div class="col-md-4 col-12">
-                                <span><i class="fa fa-2x fa-regular fa-heart green-circle"></i><b style="margin-left:0%">Get started from any device, anywhere, anytime</b></span>
+                                <span><i class="fa fa-2x fa-regular fa-heart green-circle"></i><b style="margin-left:0%">Get started from any device, anywhere, anytime.</b></span>
                                 
                                 <p style="font: Helvetica Neue; color: #ADADAD;margin-top:20px;"> 
                                     <ul>
@@ -137,7 +137,7 @@ export default class extends DefaultView {
                                 </p>
                             </div>
                             <div class="col-md-4 col-12">
-                                <span><i class="fa fa-2x fa-light fa-cloud green-circle"></i><b style="margin-left:5%">Financial Support that is humane</b></span>
+                                <span><i class="fa fa-2x fa-light fa-cloud green-circle"></i><b style="margin-left:5%">Financial Support that is humane.</b></span>
                                 
                                 <p style="font: Helvetica Neue; color: #ADADAD;margin-top:20px;"> 
                                     <ul>

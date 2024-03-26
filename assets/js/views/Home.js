@@ -15,11 +15,11 @@ export default class extends DefaultView {
                 <div class="container-fluid">
                     <div class="row ">
                         <div class="col-md-6 col-12 pe-5 ps-8">
-                            <h3 class="mt-10 translate-bottom-50 transition-100 transition-delay-600">Empowering Your  Financial  Journey With
-                                Cutting-Edge Technology
+                            <h3 class="mt-10 translate-bottom-50 transition-100 transition-delay-600">Empowering Your  Financial  Journey.
                             </h3>
                             <p class="sub-title translate-bottom-50 transition-100 transition-delay-800">
-                                We help take your business further.
+                                <!--We help take your business further.-->
+                                With seamless and convenient lending process.
                             </p>
                             <p class="translate-bottom-50 transition-100 transition-delay-1000">
                                 <a href="/onboarding" class="default-button">Get Started</a>
@@ -148,7 +148,7 @@ export default class extends DefaultView {
                         </div>
                         <div class="col-md-8 col-12">
                             <h4 style="font-size: 25px;">
-                                PallyWad Capital is an innovative financial institution, reshaping the financial landscape by leveraging advanced technology to provide a seamless and fully online lending experience to individuals and businesses. Our dynamic approach adapts to industry and economic trends, and we stand as a catalyst for financial inclusivity in Nigeria by providing accessible and technology-driven lending solutions.
+                            PallyWad Capital Ltd is an innovative financial services company dedicated to improving financial inclusivity by providing seamless and convenient lending through a user-centric and fully online experience. 
                             </h4>
                             <p>
                             We aim to simplify the lending process by deploying seamless and tailored funding solutions, providing transparent and flexible terms, through a user-centric and fully online experience.
