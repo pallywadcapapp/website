@@ -56,8 +56,7 @@ export default class extends DefaultView {
                             <ul>
                                 <li>
                                     <b>Personal Loans</b><br/>
-                                    <span>Catering to established businesses with tangible assets, providing collateralized loans to support expansion, 
-                                        working capital needs, or equipment purchase.</span>
+                                    <span>Catering to individuals with valuable collateral, requiring funding for education, home renovation, purchase of home appliances, or travel expenses. </span>
                                 </li>
                                 <li>
                                     <b>Business Loans</b><br />
