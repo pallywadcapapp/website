@@ -74,7 +74,7 @@ export default class extends DefaultView {
                                 <span class="fa fa-phone"></span>
                             </div>
                             <div class="text pl-3">
-                            <span><b>Phone: </b></span> <a style="color: #fff !important;" href="tel://08023469049">08023469049</a>
+                            <span><b>Phone: </b></span> <a style="color: #fff !important;" href="tel://+2349084310006">09084310006</a>
                           </div>
                       </div>
                         <div class="dbox w-100 d-flex align-items-center">
