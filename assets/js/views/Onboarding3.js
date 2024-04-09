@@ -39,7 +39,7 @@ export default class extends DefaultView {
                               </div>
                                 <div class="form-group px-7 mt-3">
                                     <label>Confirm Password <span class="text-danger">*</span></label>
-                                    <input type="password" required class="form-control" id="confirmpassword" name="confirmpassword" placeholder="confirm password">
+                                    <input type="password" required class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirm password">
                                     <span class="lock-icon"><img src="../assets/img/padlock-icon.png" /></span>
                                     <span toggle="#confirmpassword" class="fa fa-eye-slash eye-icon toggle-password"></span>
                                 </div>
@@ -55,12 +55,12 @@ export default class extends DefaultView {
                                     <span class="user-icon fa fa-user-o"></span>
                                 </div>
                                 <div class="form-group px-7 mt-3">
-                                    <label>Middle Name <span class="text-danger">*</span></label>
+                                    <label>Middle Name <!--<span class="text-danger">*</span>--></label>
                                     <input type="text" required class="form-control" id="othernames" name="othernames" placeholder="Middle Name">
                                     <span class="user-icon fa fa-user-o"></span>
                                 </div>
                                 <div class="form-group px-7 mt-3">
-                                    <label>Mobile No<span class="text-danger">*</span></label>
+                                    <label>Mobile No <span class="text-danger">*</span></label>
                                     <input type="number" required class="form-control" id="phoneNo"  name="phoneNo" placeholder="Valid phone number"
                                     onchange="validatePhoneNumber()">
                                     <span class="phone-icon fa-solid fa-phone"></span>
