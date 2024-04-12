@@ -15,18 +15,18 @@ export default class extends DefaultView {
                     <div class="col-md-7 col-12 ms-auto me-auto mt-4">
                         <div id="onboarding-forms" class="white-bg rounded div-shadow onboarding-form ">
                             <form id="step-1">
-                                <div class="text-center mt-3 px-8">
+                                <div class="text-center mt-3">
                                     <img src="../assets/img/top-continue-graphic.png" class="onboard-icon" />
                                     <h3>Let's get started</h3>
                                     <p>Create a user account with PallyWad Capital,
                                     Provide basic personal Information</p>
                                 </div>
-                                <div class="form-group px-7 mt-3">
-                                    <label>Email <span class="text-danger">*</span></label>
+                                <div class="form-group mt-3">
+                                    <label class="text-center">Email <span class="text-danger">*</span></label>
                                     <input type="email" required class="form-control" id="email" name="email" placeholder="Your valid email">
                                     <span class="email-icon"><img src="../assets/img/email-icon.png" /></span>
                                 </div>
-                                <div class="form-group mt-3 px-7">
+                                <div class="form-group mt-3">
                                     <button id="continue" class="continue-button" type="button">Continue</button>
                                     <a href="https://app.pallywad.com/sign-in" class="have-account mt-3">Already have an account? <span>Sign In</span></a>
                                 </div>

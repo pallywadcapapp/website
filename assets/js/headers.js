@@ -77,11 +77,11 @@ class DefaultFooter extends HTMLElement {
                             <div class="col-md-4">
                                 <p class="footer-link-title">PAGES</p>
                                 <ul class="footer-link">
-                                    <li><a href="/" data-link>Home</a></li>
-                                    <li><a href="loans" data-link>Loans</a></li>
-                                    <li><a href="aboutus" data-link>About Us</a></li>
-                                    <li><a href="contactus" data-link>Contact Us</a></li>
-                                    <li><a href="faqs" data-link>FAQs</a></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="loans">Loans</a></li>
+                                    <li><a href="aboutus">About Us</a></li>
+                                    <li><a href="contactus">Contact Us</a></li>
+                                    <li><a href="faqs">FAQs</a></li>
                                 </ul>
                             </div>
 
@@ -97,7 +97,7 @@ class DefaultFooter extends HTMLElement {
                                 <p class="footer-link-title">COMPANY</p>
                                 <ul class="footer-link">
                                     <li><a href="/terms">Terms of Service</a></li>
-                                    <li><a href="/privacy" data-link>Privacy Policy</a></li>
+                                    <li><a href="/privacy">Privacy Policy</a></li>
                                 </ul>
                             </div>
                         </div>

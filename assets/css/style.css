@@ -109,7 +109,7 @@ body.loaded #preloader {
 =========================================================================*/
 
 .ps-8 {
-    padding-left: 80px;
+    padding-left: 60px;
 }
 
 .mb-7 {
@@ -894,4 +894,20 @@ input[type="file"]{
     position: relative;
     left: -35px;
     content: "✖";
+  }
+
+  @media  (max-width: 780px) {
+    .default-button-white {
+        display: inline-block;
+        border-radius: 4px;
+        color: #000000;
+        font-size: 16px;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        height: 44px;
+        padding: 0px 0px;
+        line-height: 44px;
+    }
   }

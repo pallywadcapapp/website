@@ -16,13 +16,13 @@ export default class extends DefaultView {
                         <div id="onboarding-forms" class="white-bg rounded div-shadow onboarding-form onb3 ">
                         
                             <form id="step-2"  >
-                                <div class="text-center mt-3 px-8">
+                                <div class="text-center mt-3">
                                     <a href="/onboarding" data-link><img src="../assets/img/top-continue-graphic.png" class="onboard-icon" /></a>
                                     <h3>Let's get to know you</h3>
                                     <p>Personal Information.</p>
                                 </div>
                                 
-                                <div class="form-group px-7 mt-3">
+                                <div class="form-group mt-3">
                                     <label>Password <span class="text-danger">*</span></label>
                                     <input type="password" required class="form-control" id="password" name="password"
                                     onkeyup="checkPasswordStrength();" placeholder="Create a password">
@@ -37,36 +37,36 @@ export default class extends DefaultView {
                                 <p id="number" class="invalid">A <b>number</b></p>
                                 <p id="length" class="invalid">Minimum <b>8 characters</b></p>
                               </div>
-                                <div class="form-group px-7 mt-3">
+                                <div class="form-group mt-3">
                                     <label>Confirm Password <span class="text-danger">*</span></label>
                                     <input type="password" required class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirm password">
                                     <span class="lock-icon"><img src="../assets/img/padlock-icon.png" /></span>
                                     <span toggle="#confirmpassword" class="fa fa-eye-slash eye-icon toggle-password"></span>
                                 </div>
                                 <div style="margin-top: 7px;" id="CheckPasswordMatch"></div>
-                                <div class="form-group px-7 mt-3">
+                                <div class="form-group mt-3">
                                     <label>First Name <span class="text-danger">*</span></label>
                                     <input type="text" required class="form-control" id="firstname" name="firstname" placeholder="Your First Name">
                                     <span class="user-icon fa fa-user-o"></span>
                                 </div>
-                                <div class="form-group px-7 mt-3">
+                                <div class="form-group mt-3">
                                     <label>Last Name <span class="text-danger">*</span></label>
                                     <input type="text" required class="form-control" id="lastname" name="lastname" placeholder="Your Last Name">
                                     <span class="user-icon fa fa-user-o"></span>
                                 </div>
-                                <div class="form-group px-7 mt-3">
+                                <div class="form-group mt-3">
                                     <label>Middle Name <!--<span class="text-danger">*</span>--></label>
-                                    <input type="text" required class="form-control" id="othernames" name="othernames" placeholder="Middle Name">
+                                    <input type="text" class="form-control" id="othernames" name="othernames" placeholder="Middle Name">
                                     <span class="user-icon fa fa-user-o"></span>
                                 </div>
-                                <div class="form-group px-7 mt-3">
+                                <div class="form-group mt-3">
                                     <label>Mobile No <span class="text-danger">*</span></label>
                                     <input type="number" required class="form-control" id="phoneNo"  name="phoneNo" placeholder="Valid phone number"
                                     onchange="validatePhoneNumber()">
                                     <span class="phone-icon fa-solid fa-phone"></span>
                                 </div>
                                 <div id="phoneValidationMsg" style="color:red"></div>
-                                <div class="form-group px-7 mt-3">
+                                <div class="form-group mt-3">
                                     <label>NIN <span class="text-danger">*</span></label>
                                     <input type="text" required class="form-control" id="nin" name="nin" placeholder="National Identification Number">
                                     <span class="lock-icon"><img src="../assets/img/padlock-icon.png" /></span>

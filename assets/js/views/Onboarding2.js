@@ -16,7 +16,7 @@ export default class extends DefaultView {
                         <div id="onboarding-forms" class="white-bg rounded div-shadow onboarding-form ">
                         
                             <form id="step-2">
-                                <div class="text-center mt-3 px-8">
+                                <div class="text-center mt-3">
                                     <a href="/onboarding" data-link><img src="../assets/img/top-continue-graphic.png" class="onboard-icon" /></a>
                                     <h3>Let's verify your email</h3>
                                     <p>A validation code has been sent to the email you provided in the previous page. 

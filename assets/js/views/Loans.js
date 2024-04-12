@@ -99,7 +99,7 @@ export default class extends DefaultView {
                                 <p style="font: Helvetica Neue; color: #ADADAD;" > 
                                 Our business is to support your business. 
                                 </p>
-                                <a href="/faqs" data-link>LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-solid fa-arrow-right"></i></a>
+                                <a href="/faqs">LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@ export default class extends DefaultView {
                                 </p>
                             </div>
                             <div class="col-md-4 col-12">
-                                <span><i class="fa fa-2x fa-regular fa-heart green-circle"></i><b style="margin-left:0%">Get started from any device, anywhere, anytime.</b></span>
+                                <span><i class="fa fa-2x fa-regular fa-heart green-circle"></i></span><span><b style="margin-left:0%">Get started from any device, anywhere, anytime.</b></span>
                                 
                                 <p style="font: Helvetica Neue; color: #ADADAD;margin-top:20px;"> 
                                     <ul>
